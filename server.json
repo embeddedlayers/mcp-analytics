@@ -1,0 +1,75 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "ai.mcpanalytics/analytics",
+  "description": "Professional statistical analysis platform with 50+ ML/statistics tools. Run regression, clustering, time series forecasting, and more directly from Claude or Cursor. Features OAuth2 authentication, encrypted datasets, and shareable interactive reports.",
+  "version": "1.0.0",
+  "author": {
+    "name": "MCP Analytics",
+    "email": "support@mcpanalytics.ai",
+    "url": "https://mcpanalytics.ai"
+  },
+  "license": "MIT",
+  "homepage": "https://mcpanalytics.ai",
+  "repository": "https://github.com/embeddedlayers/mcp-analytics",
+  "categories": [
+    "analytics",
+    "data-science",
+    "statistics",
+    "machine-learning"
+  ],
+  "keywords": [
+    "statistics",
+    "machine-learning",
+    "regression",
+    "clustering",
+    "time-series",
+    "data-analysis",
+    "arima",
+    "xgboost",
+    "bayesian"
+  ],
+  "remotes": [
+    {
+      "transport": "http+sse",
+      "url": "https://api.mcpanalytics.ai/auth0",
+      "authentication": {
+        "type": "oauth2",
+        "authorizationUrl": "https://api.mcpanalytics.ai/oauth2/authorize",
+        "tokenUrl": "https://api.mcpanalytics.ai/oauth2/token",
+        "scopes": ["openid", "profile", "email", "execute:tools"],
+        "pkce": true
+      }
+    }
+  ],
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": true
+  },
+  "examples": [
+    {
+      "title": "Run Linear Regression",
+      "description": "Analyze relationships between variables with linear regression",
+      "code": "Use discover_tools('predict sales regression') then tools_run with your dataset"
+    },
+    {
+      "title": "Customer Segmentation",
+      "description": "Segment customers using K-means clustering",
+      "code": "Use tools_run with 'analytics__ml__clustering__kmeans' on customer data"
+    },
+    {
+      "title": "Time Series Forecasting",
+      "description": "Forecast future values with ARIMA",
+      "code": "Use tools_run with 'analytics__statistical__time_series__arima' on historical data"
+    }
+  ],
+  "documentation": {
+    "quickstart": "https://mcpanalytics.ai/docs/quickstart",
+    "tools": "https://mcpanalytics.ai/tools",
+    "api": "https://api.mcpanalytics.ai/docs"
+  },
+  "support": {
+    "issues": "https://github.com/embeddedlayers/mcp-analytics/issues",
+    "email": "support@mcpanalytics.ai"
+  }
+}
