@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://mcpanalytics.ai/docs
+    about: Please check our documentation first
+  - name: Discord Community
+    url: https://discord.gg/mcpanalytics
+    about: Get help from our community
+  - name: Email Support
+    url: mailto:support@mcpanalytics.ai
+    about: Contact our support team for account issues
+  - name: Security Issues
+    url: mailto:security@mcpanalytics.ai
+    about: Please report security vulnerabilities via email

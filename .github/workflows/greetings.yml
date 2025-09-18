@@ -1,0 +1,35 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: |
+          Welcome to MCP Analytics! 👋
+
+          Thank you for opening your first issue. Our team will review it and respond as soon as possible.
+
+          In the meantime:
+          - Check our [documentation](https://mcpanalytics.ai/docs) for answers
+          - Join our [Discord community](https://discord.gg/mcpanalytics) for real-time help
+          - Browse [existing issues](https://github.com/embeddedlayers/mcp-analytics/issues) for similar problems
+
+        pr-message: |
+          Welcome to MCP Analytics! 🎉
+
+          Thank you for your first contribution! We're excited to review your pull request.
+
+          Please ensure:
+          - Your PR follows our [contributing guidelines](https://github.com/embeddedlayers/mcp-analytics/blob/main/CONTRIBUTING.md)
+          - All checks are passing
+          - You've tested your changes
+
+          Our team will review your PR soon!
