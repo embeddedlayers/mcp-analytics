@@ -381,52 +381,26 @@ MCP Analytics is built by a team of data scientists and engineers passionate abo
 - **MCP Registry**: Official listing in the MCP servers directory
 - **More Tools**: Continuously expanding our analytics capabilities
 
-## Development
+## Testing & Support
 
 ### Testing Your Connection
 
+After installation, restart your IDE and look for "MCP Analytics" in the available tools. On first use, you'll be prompted to authenticate via OAuth 2.0.
+
 ```bash
-# Test the MCP connection directly
+# To test the connection directly:
 npx -y mcp-remote@latest https://api.mcpanalytics.ai/auth0
 ```
 
-### Environment Variables
+### Troubleshooting
 
-```bash
-# Optional: Set your API key for programmatic access
-export MCP_ANALYTICS_API_KEY="your_api_key"
+If MCP Analytics doesn't appear after installation:
+1. Ensure your config file is valid JSON
+2. Restart your IDE completely
+3. Check the IDE's developer console for errors
+4. Verify you have internet connectivity
 
-# Optional: Set custom endpoint (for enterprise customers)
-export MCP_ANALYTICS_ENDPOINT="https://custom.mcpanalytics.ai"
-```
-
-### Local Development
-
-For testing with local data:
-
-```javascript
-// Example: Testing with local CSV
-const response = await mcp.call('tools/run', {
-  name: 'linear_regression',
-  arguments: {
-    dataset: './data/sales.csv',
-    target: 'revenue',
-    features: ['marketing_spend', 'sales_calls']
-  }
-});
-```
-
-### Debugging
-
-Enable debug logging:
-```bash
-export DEBUG=mcp:*
-```
-
-View logs in your IDE:
-- **Claude Desktop**: Check developer console
-- **Cursor**: View output panel
-- **VS Code**: Check Continue extension logs
+For support: support@mcpanalytics.ai
 
 ## Contributing
 
