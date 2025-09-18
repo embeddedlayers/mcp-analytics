@@ -1,16 +1,19 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "ai.mcpanalytics/analytics",
-  "description": "Professional statistical analysis platform with 50+ ML/statistics tools. Run regression, clustering, time series forecasting, and more directly from Claude or Cursor. Features OAuth2 authentication, encrypted datasets, and shareable interactive reports.",
-  "version": "1.0.0",
+  "description": "MCP Analytics, searchable tools and reports with interactive HTML visualization",
+  "version": "1.0.3",
   "author": {
     "name": "MCP Analytics",
     "email": "support@mcpanalytics.ai",
     "url": "https://mcpanalytics.ai"
   },
-  "license": "Proprietary",
+  "license": "MIT",
   "homepage": "https://mcpanalytics.ai",
-  "repository": "https://github.com/embeddedlayers/mcp-analytics",
+  "repository": {
+    "url": "https://github.com/embeddedlayers/mcp-analytics",
+    "source": "github"
+  },
   "categories": [
     "analytics",
     "data-science",
@@ -26,10 +29,13 @@
     "data-analysis",
     "arima",
     "xgboost",
-    "bayesian"
+    "bayesian",
+    "oauth2",
+    "encrypted"
   ],
   "remotes": [
     {
+      "type": "streamable-http",
       "transport": "http+sse",
       "url": "https://api.mcpanalytics.ai/auth0",
       "authentication": {
@@ -69,7 +75,7 @@
     "api": "https://api.mcpanalytics.ai/docs"
   },
   "support": {
-    "issues": "https://github.com/embeddedlayers/mcp-analytics/issues",
+    "issues": "support@mcpanalytics.ai",
     "email": "support@mcpanalytics.ai"
   }
 }
