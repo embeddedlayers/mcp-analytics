@@ -1,0 +1,43 @@
+{
+  "name": "mcp-analytics",
+  "owner": {
+    "name": "MCP Analytics",
+    "email": "support@mcpanalytics.ai"
+  },
+  "metadata": {
+    "description": "Data analytics tools for Claude — statistical analysis, machine learning, forecasting, and more. Upload your data, ask a question, get an interactive report.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "mcp-analytics",
+      "description": "Upload CSV files or connect Shopify, Stripe, WooCommerce, and more. Run 100+ analysis types — regression, clustering, forecasting, A/B tests, churn prediction — and get interactive HTML reports with charts and AI insights.",
+      "version": "1.0.0",
+      "author": {
+        "name": "MCP Analytics",
+        "email": "support@mcpanalytics.ai"
+      },
+      "homepage": "https://mcpanalytics.ai",
+      "repository": "https://github.com/embeddedlayers/mcp-analytics",
+      "license": "MIT",
+      "keywords": [
+        "analytics",
+        "statistics",
+        "machine-learning",
+        "forecasting",
+        "data-analysis",
+        "csv",
+        "shopify",
+        "stripe",
+        "regression",
+        "clustering",
+        "time-series",
+        "data-science"
+      ],
+      "source": {
+        "source": "github",
+        "repo": "embeddedlayers/mcp-analytics"
+      }
+    }
+  ]
+}

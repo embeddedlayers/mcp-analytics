@@ -1,0 +1,20 @@
+{
+  "name": "mcp-analytics",
+  "version": "1.0.0",
+  "description": "Data analytics tools for Claude — statistical analysis, machine learning, forecasting, and more. Upload your data, ask a question, get an interactive report with charts and AI insights.",
+  "author": {
+    "name": "MCP Analytics",
+    "email": "support@mcpanalytics.ai"
+  },
+  "homepage": "https://mcpanalytics.ai",
+  "mcpServers": {
+    "mcp-analytics": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://api.mcpanalytics.ai/auth0"
+      ]
+    }
+  }
+}
