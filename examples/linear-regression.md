@@ -9,14 +9,15 @@ Can you help me understand which channels drive the most revenue?"
 
 ### What MCP Analytics Does:
 
-1. **Loads your data** - CSV, JSON, or public URL
-2. **Runs regression analysis** - Identifies relationships between ad spend and sales
-3. **Provides insights**:
-   - Coefficient for each channel (ROI)
+1. **Discovers the right tool** — `discover_tools('regression advertising spend revenue')` finds the linear regression module
+2. **Uploads your data** — `datasets_upload` securely processes your CSV
+3. **Runs the analysis** — `tools_run` with `analytics__statistical__regression__linear_regression`
+4. **Provides insights**:
+   - Coefficient for each channel (ROI per dollar)
    - Statistical significance (p-values)
    - R-squared (model fit)
    - Predictions for different spend scenarios
-4. **Generates report** - Interactive visualizations you can share
+5. **Generates report** — `reports_view` opens interactive visualizations you can share
 
 ### Sample Output:
 
@@ -31,9 +32,15 @@ Model explains 78% of sales variance (R² = 0.78)
 
 ### Try It Yourself:
 
-Use the Boston Housing dataset:
+Upload a CSV with outcome and predictor columns and ask:
+
 ```
-"Run linear regression on the Boston Housing dataset
-to predict median home values. Use rooms, crime rate,
-and distance to employment as predictors."
+"Run linear regression to predict revenue from our ad spend columns.
+Show me which channels are statistically significant."
 ```
+
+The AI will call `discover_tools`, upload your data, run the module, and return an interactive report — all in one conversation.
+
+---
+
+[More examples →](../examples/) | [Sample reports →](https://mcpanalytics.ai/sample-reports.html)

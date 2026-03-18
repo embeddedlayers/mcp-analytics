@@ -33,7 +33,7 @@
 
 MCP Analytics Suite is an intelligent analytics platform that understands what you want to analyze and automatically selects the right approach. No statistics degree required — just describe your business question and let our AI-powered discovery handle the complexity.
 
-Connect your data from **Shopify**, **Stripe**, **WooCommerce**, **eBay**, or upload any CSV. Run regression, forecasting, clustering, A/B testing, customer LTV, churn prediction, and hundreds of other statistical methods. Get back interactive HTML reports with charts and AI-written insights.
+Upload any CSV — Shopify orders, Stripe exports, WooCommerce reports, eBay data, ad platform reports, or any tabular data. Connect live data from **Google Analytics 4** and **Google Search Console** via native connectors. Run regression, forecasting, clustering, A/B testing, customer LTV, churn prediction, and hundreds of other statistical methods. Get back interactive HTML reports with charts and AI-written insights.
 
 ### Why MCP Analytics?
 
@@ -138,23 +138,31 @@ MCP Analytics:
 The platform provides a complete suite of MCP tools for end-to-end analytics:
 
 ### Core Analytics Tools
-- **`tools.discover`** - Natural language tool discovery
-- **`tools.run`** - Automated analysis execution
-- **`tools.info`** - Get tool documentation
+- **`discover_tools`** - Natural language tool discovery (5-signal semantic search)
+- **`tools_run`** - Execute an analysis module on your data
+- **`tools_info`** - Get tool documentation and schema
+- **`tools_schema`** - Inspect column requirements for a tool
 
 ### Data Management
-- **`datasets.upload`** - Secure data upload with encryption
-- **`datasets.list`** - Manage your datasets
-- **`datasets.read`** - Access and preview data
+- **`datasets_upload`** - Secure data upload with encryption
+- **`datasets_list`** - List your uploaded datasets
+- **`datasets_read`** - Preview dataset contents
+- **`datasets_download`** - Download a dataset
+- **`datasets_update`** - Update dataset metadata
+
+### Connectors
+- **`connectors_list`** - List available data source connections
+- **`connectors_query`** - Pull live data from a connected source
 
 ### Reporting & Insights
-- **`reports.view`** - Interactive visualization dashboard
-- **`reports.search`** - Semantic search across analyses
+- **`reports_view`** - Open an interactive HTML report
+- **`reports_list`** - List your reports
+- **`reports_search`** - Semantic search across past analyses
+- **`agent_advisor`** - Conversational AI that guides analysis and interprets results
 
 ### Platform Tools
-- **`billing()`** - Usage and subscription management
-- **`about()`** - Platform information and status
-- **`manual()`** - Documentation access
+- **`billing`** - Usage and subscription management
+- **`about`** - Platform information and status
 
 ## Features
 
@@ -349,12 +357,13 @@ flowchart TB
 
 ## Documentation
 
-- [**Quick Start Guide**](https://mcpanalytics.ai/docs/quickstart) - Get running in 30 seconds
+- [**Quick Start Guide**](docs/quickstart.md) - Get running in under a minute
+- [**Architecture**](docs/ARCHITECTURE.md) - How the platform works
+- [**Connectors**](docs/connectors.md) - GA4, GSC, and CSV data sources
+- [**Pricing**](docs/pricing.md) - Plans and limits
+- [**Security**](SECURITY.md) - Security & compliance details
 - [**API Reference**](https://api.mcpanalytics.ai/docs) - Complete API documentation
-- [**Platform Overview**](https://mcpanalytics.ai/tools) - How the platform works
 - [**Tutorials**](https://mcpanalytics.ai/tutorials) - Step-by-step guides
-- [**Examples**](https://mcpanalytics.ai/examples) - Real-world use cases
-- [**Security**](https://mcpanalytics.ai/security) - Security & compliance details
 
 ## Support
 
@@ -380,13 +389,6 @@ flowchart TB
 ## About MCP Analytics
 
 MCP Analytics is built by data scientists and engineers passionate about making advanced statistical analysis accessible through AI assistants. The platform runs validated, deterministic analysis modules — the same data and tool produce the same result every time, unlike LLM code generation.
-
-### Coming Soon
-
-- **NPM Package**: Direct installation via `npm install @mcpanalytics/server`
-- **Smithery Integration**: One-click install via Smithery CLI
-- **MCP Registry**: Official listing in the MCP servers directory
-- **More Tools**: Continuously expanding our analytics capabilities
 
 ## Testing & Support
 
