@@ -1,5 +1,9 @@
 # MCP Analytics Suite
 
+**MCP server for data analytics** — Shopify, Stripe, WooCommerce, eBay, CSV files, and more. Run statistical analysis, forecasting, and machine learning directly in Claude or Cursor. Ask a question, upload your data, get an interactive report.
+
+[Sample Reports →](https://mcpanalytics.ai/sample-reports.html) • [Try Demo →](https://mcpanalytics.ai/demo.html) • [Pricing →](https://mcpanalytics.ai/pricing.html)
+
 <div align="center">
 
 [![Version](https://img.shields.io/badge/version-1.0.3-blue)](https://mcpanalytics.ai)
@@ -25,7 +29,9 @@
 
 ## Overview
 
-MCP Analytics Suite is an intelligent analytics platform that understands what you want to analyze and automatically selects the right approach. No statistics degree required—just describe your business question and let our AI-powered discovery handle the complexity.
+MCP Analytics Suite is an intelligent analytics platform that understands what you want to analyze and automatically selects the right approach. No statistics degree required — just describe your business question and let our AI-powered discovery handle the complexity.
+
+Connect your data from **Shopify**, **Stripe**, **WooCommerce**, **eBay**, or upload any CSV. Run regression, forecasting, clustering, A/B testing, customer LTV, churn prediction, and hundreds of other statistical methods. Get back interactive HTML reports with charts and AI-written insights.
 
 ### Why MCP Analytics?
 
@@ -249,7 +255,7 @@ Claude: [Applies ARIMA, generates predictions with confidence intervals]
 - **Encryption**: TLS 1.3 for all data transfers
 - **Processing**: Isolated Docker containers per analysis
 - **Data Handling**: Ephemeral processing, no persistence
-- **Access Control**: API key management with usage limits
+- **Access Control**: OAuth 2.0 scoped permissions with usage limits
 - **Audit Trail**: Complete logging for compliance
 
 ### Privacy & Data Handling
@@ -351,7 +357,6 @@ flowchart TB
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/embeddedlayers/mcp-analytics/issues)
-- **Discord**: [Join our community](https://discord.gg/mcpanalytics)
 - **Email**: support@mcpanalytics.ai
 - **Docs**: [mcpanalytics.ai/docs](https://mcpanalytics.ai/docs)
 - **Enterprise**: sales@mcpanalytics.ai
@@ -372,7 +377,7 @@ flowchart TB
 
 ## About MCP Analytics
 
-MCP Analytics is built by a team of data scientists and engineers passionate about making advanced analytics accessible through AI. We're backed by enterprise customers across finance, healthcare, and e-commerce.
+MCP Analytics is built by data scientists and engineers passionate about making advanced statistical analysis accessible through AI assistants. The platform runs validated, deterministic analysis modules — the same data and tool produce the same result every time, unlike LLM code generation.
 
 ### Coming Soon
 
@@ -435,3 +440,9 @@ This is commercial software. Use of the MCP Analytics service is subject to our:
 Built by [MCP Analytics](https://mcpanalytics.ai) | Powered by R & Python
 
 </div>
+
+---
+
+If MCP Analytics saves you time, a ⭐ on GitHub helps others find it.
+
+**Tags**: `mcp` `mcp-server` `model-context-protocol` `analytics` `data-analytics` `shopify-analytics` `stripe-analytics` `csv-analysis` `statistics` `machine-learning` `time-series` `clustering` `regression` `business-intelligence` `claude` `cursor` `ai-tools` `no-code-analytics` `forecasting` `customer-analytics`
