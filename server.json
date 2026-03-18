@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "ai.mcpanalytics/analytics",
-  "description": "MCP Analytics, searchable tools and reports with interactive HTML visualization",
-  "version": "1.0.3",
+  "description": "Analytics for business data: upload CSV or connect GA4/GSC, run ML/stats, get HTML reports.",
+  "version": "1.0.4",
   "author": {
     "name": "MCP Analytics",
     "email": "support@mcpanalytics.ai",
@@ -36,7 +36,6 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "transport": "http+sse",
       "url": "https://api.mcpanalytics.ai/auth0",
       "authentication": {
         "type": "oauth2",
