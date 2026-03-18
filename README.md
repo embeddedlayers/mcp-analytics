@@ -2,6 +2,8 @@
 
 **MCP server for data analytics** — Shopify, Stripe, WooCommerce, eBay, CSV files, and more. Run statistical analysis, forecasting, and machine learning directly in Claude or Cursor. Ask a question, upload your data, get an interactive report.
 
+> **This is the public listing and documentation repository.** Issues, feature requests, and examples live here. The API server code is maintained separately.
+
 [Sample Reports →](https://mcpanalytics.ai/sample-reports.html) • [Try Demo →](https://mcpanalytics.ai/demo.html) • [Pricing →](https://mcpanalytics.ai/pricing.html)
 
 <div align="center">

@@ -1,33 +1,17 @@
-# Quick Start Guide
+# Quick Start — MCP Analytics
 
-## Installation (30 seconds)
+Get running in under a minute.
+
+## Step 1 — Install in Your AI Client
 
 ### Claude Desktop
 
-1. Open Claude Desktop settings
-2. Navigate to Developer → MCP Servers
-3. Click "Add Server" and paste:
-
-```json
-{
-  "mcpanalytics": {
-    "command": "npx",
-    "args": ["-y", "mcp-remote@latest", "https://api.mcpanalytics.ai/auth0"]
-  }
-}
-```
-
-4. Restart Claude Desktop
-5. You'll see "MCP Analytics" in the tools list
-
-### Cursor
-
-Add to your `.cursor/config.json`:
+Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
 
 ```json
 {
   "mcpServers": {
-    "mcpanalytics": {
+    "mcp-analytics": {
       "command": "npx",
       "args": ["-y", "mcp-remote@latest", "https://api.mcpanalytics.ai/auth0"]
     }
@@ -35,30 +19,88 @@ Add to your `.cursor/config.json`:
 }
 ```
 
-## First Analysis
+Restart Claude Desktop completely.
 
-Try this simple example:
+### Cursor
+
+Add to your Cursor MCP settings (Settings → MCP):
+
+```json
+{
+  "mcpServers": {
+    "mcp-analytics": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote@latest", "https://api.mcpanalytics.ai/auth0"]
+    }
+  }
+}
+```
+
+### VS Code (Continue extension)
+
+Add to `~/.continue/config.json`:
+
+```json
+{
+  "mcpServers": {
+    "mcp-analytics": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote@latest", "https://api.mcpanalytics.ai/auth0"]
+    }
+  }
+}
+```
+
+## Step 2 — Sign In
+
+On first use, your AI client will open a browser window for OAuth sign-in. Create a free account at [mcpanalytics.ai](https://mcpanalytics.ai) or sign in if you already have one. This is a one-time setup — your client stores the token and refreshes it automatically.
+
+## Step 3 — Start Analyzing
+
+Once connected, just ask your AI assistant:
 
 ```
-"I have data at https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv
-Can you analyze what factors affect tip amounts using linear regression?"
+"I have a CSV of monthly sales data. Can you forecast next quarter?"
 ```
 
-MCP Analytics will:
-1. Load the data
-2. Run linear regression
-3. Show you which factors matter most
-4. Provide a shareable report
+```
+"Analyze this Shopify orders export and tell me what's driving revenue"
+```
 
-## Authentication
+```
+"Run a t-test on these two groups and tell me if the difference is significant"
+```
 
-On first use, you'll be prompted to authenticate via Auth0. This is a one-time setup that:
-- Secures your data
-- Tracks your usage
-- Enables report saving
+The AI will:
+1. Discover the right analysis tool for your question
+2. Ask you to upload your data (or connect a data source)
+3. Run the analysis
+4. Return an interactive HTML report with charts and insights
 
-## Need Help?
+## Free Tier
 
-- Email: support@mcpanalytics.ai
-- Website: [mcpanalytics.ai](https://mcpanalytics.ai)
-- Issues: [GitHub](https://github.com/embeddedlayers/mcp-analytics/issues)
+The free tier includes 25 analyses per month — no credit card required. See [pricing](https://mcpanalytics.ai/pricing.html) for paid plans.
+
+## Try a Live Demo
+
+Before connecting, you can [try the demo](https://mcpanalytics.ai/demo.html) or [browse sample reports](https://mcpanalytics.ai/sample-reports.html) to see what the output looks like.
+
+## Troubleshooting
+
+**MCP Analytics doesn't appear in my tools list**
+- Restart your AI client completely (not just reload)
+- Verify your config file is valid JSON
+- Check your client's MCP logs for connection errors
+
+**Authentication fails**
+- Make sure you have a free account at mcpanalytics.ai
+- Try running `npx -y mcp-remote@latest https://api.mcpanalytics.ai/auth0` directly in a terminal to test the connection
+
+**Analysis fails**
+- Check that your CSV has column headers in the first row
+- Try describing your data more specifically so the AI picks the right tool
+- Contact support@mcpanalytics.ai with the error message
+
+---
+
+[Full docs →](https://mcpanalytics.ai/docs.html) | [Support →](mailto:support@mcpanalytics.ai)

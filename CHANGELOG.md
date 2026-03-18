@@ -1,101 +1,62 @@
 # Changelog
 
-All notable changes to MCP Analytics Server will be documented in this file.
+All notable changes to MCP Analytics are documented here.
+Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+---
 
-## [1.0.3] - 2025-01-17
-
-### Added
-- Enhanced tool discovery with semantic search
-- Improved error handling with AI-powered insights
-- Support for custom preprocessing pipelines
-- New tools: Bayesian regression, instrumental variables
-
-### Fixed
-- Cache invalidation issues in tool discovery
-- Memory optimization for large datasets
-- OAuth callback handling in Safari
-
-### Security
-- Updated Auth0 SDK to latest version
-- Enhanced rate limiting algorithm
-
-## [1.0.2] - 2025-01-10
+## [1.0.3] — 2026-03-01
 
 ### Added
-- Support for Cursor IDE integration
-- Batch processing for multiple analyses
-- Export to Excel functionality
-- 5 new time series analysis tools
+- **Agent Advisor** — conversational AI layer that guides users through analysis and interprets results
+- **GA4 connector** — connect Google Analytics 4 directly, no CSV export needed
+- **Google Search Console connector** — run SEO analysis on live GSC data
+- **LLM tool overviews** — each module now has an AI-written overview that improves discovery accuracy
+- **Streaming responses** — analysis results stream back progressively for better UX
 
-### Changed
-- Improved report generation speed by 40%
-- Enhanced visualization quality
-- Better handling of missing data
+### Improved
+- Tool discovery accuracy significantly improved via 5-signal Reciprocal Rank Fusion
+- Hybrid discovery mode: combines dataset matching with text query re-ranking
+- Error messages now include suggested corrective actions
 
-### Fixed
-- UTF-8 encoding issues in CSV parsing
+---
+
+## [1.0.2] — 2026-01-15
+
+### Added
+- **5-signal semantic tool discovery** — structural similarity, LLM description embeddings, LLM overview embeddings, type coverage, and category fit combined via Reciprocal Rank Fusion
+- **Shopify connector** — orders, products, customers via Shopify API
+- **Stripe connector** — payments, subscriptions, revenue via Stripe API
+- **WooCommerce connector** — orders and products
+- **eBay connector** — orders and seller analytics
+- Dataset reuse — upload once, run multiple analyses
+
+### Improved
+- Column mapping precheck catches mismatches before execution
+- Report sharing via permanent URLs
+
+---
+
+## [1.0.1] — 2025-10-01
+
+### Added
+- OAuth 2.0 with PKCE — replaces API key authentication
+- Interactive HTML reports with charts and AI-written insights
+- Cursor IDE support
+- VS Code / Continue extension support
+- Dataset management: upload, list, preview
+
+### Improved
 - Timeout handling for large datasets
 
-## [1.0.1] - 2025-01-03
-
-### Added
-- Continue.dev integration support
-- Real-time progress indicators
-- Dataset preview before analysis
-- Support for JSON data sources
-
-### Changed
-- Increased file size limit to 100MB
-- Improved error messages
-- Optimized Docker container startup time
-
-### Fixed
-- Connection timeout issues
-- Report URL generation bugs
-
-## [1.0.0] - 2024-12-15
-
-### Added
-- Initial release with 50+ statistical tools
-- OAuth2 authentication via Auth0
-- Interactive report generation
-- Support for Claude Desktop and VS Code
-- Enterprise security features
-- GDPR compliance
-
-### Core Features
-- Linear and logistic regression
-- Time series analysis (ARIMA, Prophet)
-- Machine learning (Random Forest, XGBoost)
-- Clustering algorithms
-- Hypothesis testing suite
-- Customer analytics tools
-
 ---
 
-## Upcoming Features (Roadmap)
+## [1.0.0] — 2025-09-01
 
-### [1.1.0] - Q1 2025
-- Python notebook support
-- Real-time collaboration
-- Custom model deployment
-- API-only access tier
-
-### [1.2.0] - Q2 2025
-- Deep learning models
-- Natural language queries for data exploration
-- Automated insight generation
-- Integration with major cloud providers
-
-### [2.0.0] - Q3 2025
-- Self-hosted enterprise edition
-- Custom tool development SDK
-- Advanced workflow automation
-- Multi-language support
-
----
-
-For more details on each release, see our [Release Notes](https://mcpanalytics.ai/releases).
+### Added
+- Initial release — MCP server at `https://api.mcpanalytics.ai/auth0`
+- Hundreds of statistical analysis modules: regression, clustering, time series, hypothesis testing, customer analytics, machine learning
+- CSV upload and analysis
+- Claude Desktop support
+- Free tier: 25 analyses/month
+- Report generation with shareable URLs

@@ -1,95 +1,47 @@
 # Contributing to MCP Analytics
 
-Thank you for your interest in contributing to MCP Analytics! While the core server is proprietary, we welcome contributions in several areas.
+This is the **public-facing repository** for MCP Analytics — it contains documentation, examples, and listing assets. The API server code is maintained in a private repository.
 
-## How to Contribute
+Contributions welcome in the following areas:
 
-### 📝 Documentation
+## Reporting Bugs
 
-We welcome improvements to our documentation:
-- Fixing typos or clarifying instructions
-- Adding examples and use cases
-- Translating documentation
-- Improving API documentation
+Open a [bug report](https://github.com/embeddedlayers/mcp-analytics/issues/new?template=bug_report.md). Please include:
+- Your MCP client (Claude Desktop, Cursor, VS Code, etc.)
+- Your data source (Shopify, Stripe, CSV, etc.)
+- What you asked the AI to do and what went wrong
+- Any error messages from the AI response
 
-### 🐛 Bug Reports
+The more specific, the faster we can reproduce and fix it.
 
-Found a bug? Please open an issue with:
-- Clear description of the problem
-- Steps to reproduce
-- Expected vs actual behavior
-- Your environment (Claude/Cursor version, OS)
-- Any error messages or logs
+## Requesting Features
 
-### 💡 Feature Requests
+Open a [feature request](https://github.com/embeddedlayers/mcp-analytics/issues/new?template=feature_request.md). Most valuable requests:
+- New data connectors (e.g., HubSpot, Salesforce, Amazon Seller)
+- New analysis types for specific use cases
+- Improvements to report output or interpretation
 
-Have an idea for a new feature? Open an issue describing:
-- The problem you're trying to solve
-- Your proposed solution
-- Alternative solutions you've considered
-- Any examples from other tools
+## Requesting a New Analysis Module
 
-### 📊 Example Notebooks
+MCP Analytics has an autonomous module builder that produces new validated analysis modules from a specification — usually within a day. If you have a specific analytical need, describe it in a feature request with:
+- The question you're trying to answer
+- What data you have (column names and types)
+- What output you'd expect
 
-Share your analysis workflows:
-- Jupyter notebooks with interesting use cases
-- Example datasets (properly anonymized)
-- Tutorial content
-- Integration examples
+Well-specified module requests get prioritized and built quickly.
 
-### 🔧 Community Tools
+## Improving Documentation
 
-Build tools that work with MCP Analytics:
-- Client libraries
-- Data preparation utilities
-- Report visualization tools
-- Workflow automation scripts
+Docs live in this repo (`docs/`, `examples/`) and at [mcpanalytics.ai/docs](https://mcpanalytics.ai/docs.html). For doc improvements, open a PR directly or file an issue describing what's unclear.
 
-## Submission Process
+## Adding Examples
 
-1. **Fork the repository** (for documentation/examples)
-2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
-4. **Push to the branch** (`git push origin feature/amazing-feature`)
-5. **Open a Pull Request**
+The `examples/` folder contains real-world usage examples. PRs adding new examples for specific use cases (Shopify revenue analysis, Stripe churn prediction, etc.) are welcome.
 
 ## Code of Conduct
 
-### Our Pledge
+This project follows the [Contributor Covenant](CODE_OF_CONDUCT.md). Be respectful.
 
-We are committed to providing a welcoming and inclusive environment for all contributors.
+## Security
 
-### Expected Behavior
-
-- Be respectful and considerate
-- Welcome newcomers and help them get started
-- Accept constructive criticism gracefully
-- Focus on what is best for the community
-
-### Unacceptable Behavior
-
-- Harassment, discrimination, or hate speech
-- Personal attacks or inflammatory comments
-- Publishing others' private information
-- Any conduct that could be considered inappropriate in a professional setting
-
-## Getting Help
-
-- **Documentation**: [mcpanalytics.ai/docs](https://mcpanalytics.ai/docs)
-- **Discord**: [Join our community](https://discord.gg/mcpanalytics)
-- **Email**: support@mcpanalytics.ai
-
-## Recognition
-
-Contributors will be recognized in our:
-- Release notes
-- Contributors page on our website
-- Annual contributor report
-
-## License
-
-By contributing, you agree that your contributions will be licensed under the same terms as the project.
-
----
-
-Thank you for helping make MCP Analytics better! 🚀
+Do not report security vulnerabilities in public issues. See [SECURITY.md](SECURITY.md).

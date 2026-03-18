@@ -1,116 +1,67 @@
 # Security Policy
 
-## Reporting Security Vulnerabilities
+## Reporting a Vulnerability
 
-The security of MCP Analytics is our top priority. If you discover a security vulnerability, please follow these steps:
+**Do not report security vulnerabilities in public GitHub Issues.**
 
-### 🔴 Do NOT
+Email **support@mcpanalytics.ai** with subject line `[SECURITY]`. Include:
+- Description of the vulnerability
+- Steps to reproduce
+- Potential impact
+- Any suggested fix (optional)
 
-- Do not open a public GitHub issue
-- Do not discuss the vulnerability publicly
-- Do not exploit the vulnerability beyond verification
+**Response timeline:**
+- Acknowledgement within 48 hours
+- Status update within 7 days
+- Fix deployed within 30 days for confirmed vulnerabilities
 
-### ✅ DO
+MCP Analytics processes financial data (Shopify orders, Stripe payments). We treat security reports seriously and respond promptly.
 
-1. **Email us immediately** at security@mcpanalytics.ai
-2. Include the following information:
-   - Type of vulnerability
-   - Affected components
-   - Steps to reproduce
-   - Potential impact
-   - Any proof of concept (if available)
+## Supported Versions
 
-### Our Commitment
-
-- We will acknowledge receipt within 24 hours
-- We will provide a detailed response within 72 hours
-- We will work with you to understand and resolve the issue
-- We will credit you in our security acknowledgments (unless you prefer to remain anonymous)
+MCP Analytics is a hosted service — all users automatically run the latest version. There are no self-hosted editions to patch.
 
 ## Security Measures
 
-### Authentication & Authorization
-- OAuth2 with PKCE flow via Auth0
-- API key rotation and management
-- Rate limiting per API key
-- Session timeout controls
+### Authentication
+- OAuth 2.0 with PKCE via Auth0
+- No API keys — authentication is entirely OAuth-based
+- Scoped permissions: `execute:tools`, `openid`, `profile`, `email`
+- Token refresh handled automatically by the MCP client
 
 ### Data Protection
 - TLS 1.3 for all data in transit
-- AES-256 encryption for data at rest
-- Ephemeral processing (no data persistence)
-- Isolated Docker containers per analysis
+- AES-256-GCM encryption for connector credentials at rest
+- Encryption keys stored in Azure Key Vault
+- Ephemeral analysis: data is not retained after a job completes
 
-### Infrastructure Security
-- Regular security audits
-- Automated vulnerability scanning
-- DDoS protection via Cloudflare
-- WAF (Web Application Firewall)
-- Regular penetration testing
+### Infrastructure
+- DDoS protection and WAF via Cloudflare
+- Isolated Docker containers per analysis job
+- Azure managed database with automated backups
+- Secrets managed via Azure Key Vault (not hardcoded anywhere)
 
-### Privacy Practices
-- No data retention after processing
-- User data deletion upon request
-- Encrypted data transmission
-- Isolated processing environments
+### Privacy
+- No data retention after analysis completes
+- Connector credentials deletable at any time from your account
+- Reports are private by default; sharing is opt-in
 
 ## Best Practices for Users
 
-### API Key Management
-- Never share your API keys
-- Rotate keys regularly
-- Use environment variables for key storage
-- Revoke compromised keys immediately
+**Credentials**: Never paste raw API tokens or passwords into your AI chat. Use the connector setup flow in your account — credentials are encrypted before storage.
 
-### Data Handling
-- Never upload sensitive data without proper authorization
-- Ensure PII is properly anonymized
-- Use encrypted connections only
-- Verify report sharing permissions
+**Data**: Anonymize PII before uploading datasets when possible. Uploaded data is processed ephemerally and not retained, but minimizing sensitive data in transit is good practice.
 
-### Integration Security
-- Keep MCP clients updated
-- Review OAuth permissions carefully
-- Monitor usage logs for anomalies
-- Use separate keys for different environments
+**Reports**: Shared report URLs are accessible to anyone with the link. Only share reports that contain data you're comfortable sharing.
 
-## Security Updates
+**OAuth**: Review the permission scopes when authenticating. If you suspect your account is compromised, contact support@mcpanalytics.ai to revoke access.
 
-Security updates are released as soon as possible after discovery and verification.
+## Compliance
 
-### Update Channels
-- Email notifications to registered users
-- Security advisory on GitHub
-- Announcement on our Discord server
-- Update on status.mcpanalytics.ai
-
-### Version Support
-- Latest version: Full security support
-- Previous minor version: Critical security fixes only
-- Older versions: Best effort basis
-
-## Security Documentation
-
-### Available Upon Request
-- Security architecture documentation
-- Privacy policy details
-- Data handling procedures
-- Enterprise security options
-
-For enterprise compliance requirements, please contact sales@mcpanalytics.ai
-
-## Contact
-
-For security concerns, contact us at:
-- **Email**: security@mcpanalytics.ai
-- **PGP Key**: Available at [mcpanalytics.ai/pgp](https://mcpanalytics.ai/pgp)
-
-For general support:
-- **Email**: support@mcpanalytics.ai
-- **Website**: [mcpanalytics.ai](https://mcpanalytics.ai)
+- GDPR: Data deletion available upon request
+- SOC 2: In progress
+- No data retention by default
 
 ---
 
-Last updated: January 2025
-
-Thank you for helping us keep MCP Analytics secure! 🔒
+Last updated: March 2026
