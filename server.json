@@ -8,7 +8,7 @@
     "email": "support@mcpanalytics.ai",
     "url": "https://mcpanalytics.ai"
   },
-  "license": "Proprietary",
+  "license": "MIT",
   "homepage": "https://mcpanalytics.ai",
   "repository": {
     "url": "https://github.com/embeddedlayers/mcp-analytics",
