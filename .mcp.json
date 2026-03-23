@@ -2,10 +2,7 @@
   "mcpServers": {
     "mcp-analytics": {
       "command": "npx",
-      "args": ["@anthropic/mcp-analytics"],
-      "env": {
-        "MCP_AUTH_SERVER": "https://api.mcpanalytics.ai"
-      }
+      "args": ["-y", "mcp-remote@latest", "https://api.mcpanalytics.ai/auth0"]
     }
   }
 }
