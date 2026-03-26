@@ -34,13 +34,13 @@
     "encrypted"
   ],
   "packages": {
-    "npm": "@mcpanalytics/mcp-analytics"
+    "npm": "@mcp-analytics/mcp-analytics"
   },
   "remotes": [
     {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@mcpanalytics/mcp-analytics"],
+      "args": ["-y", "@mcp-analytics/mcp-analytics"],
       "env": {
         "MCP_ANALYTICS_API_KEY": "{api_key}"
       }

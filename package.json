@@ -1,5 +1,5 @@
 {
-  "name": "@mcpanalytics/mcp-analytics",
+  "name": "@mcp-analytics/mcp-analytics",
   "version": "1.0.0",
   "description": "MCP server for statistical analysis, forecasting, and ML. Connects to MCP Analytics API for interactive HTML reports.",
   "license": "MIT",

@@ -65,7 +65,7 @@ Works with Claude Desktop, Cursor, Windsurf, and any stdio MCP client. Requires 
   "mcpServers": {
     "mcpanalytics": {
       "command": "npx",
-      "args": ["-y", "@mcpanalytics/mcp-analytics"],
+      "args": ["-y", "@mcp-analytics/mcp-analytics"],
       "env": {
         "MCP_ANALYTICS_API_KEY": "mcp_your_key_here"
       }
@@ -81,7 +81,7 @@ Works with Claude Desktop, Cursor, Windsurf, and any stdio MCP client. Requires 
   "mcpServers": {
     "mcpanalytics": {
       "command": "npx",
-      "args": ["-y", "@mcpanalytics/mcp-analytics"],
+      "args": ["-y", "@mcp-analytics/mcp-analytics"],
       "env": {
         "MCP_ANALYTICS_API_KEY": "mcp_your_key_here"
       }
@@ -93,7 +93,7 @@ Works with Claude Desktop, Cursor, Windsurf, and any stdio MCP client. Requires 
 **Claude Code** — run in your terminal:
 
 ```bash
-claude mcp add mcpanalytics -- npx -y @mcpanalytics/mcp-analytics
+claude mcp add mcpanalytics -- npx -y @mcp-analytics/mcp-analytics
 # Then set MCP_ANALYTICS_API_KEY in your environment
 ```
 
@@ -420,7 +420,7 @@ After installation, restart your MCP client and look for "MCP Analytics" in the 
 
 ```bash
 # Test the stdio proxy directly:
-MCP_ANALYTICS_API_KEY=mcp_your_key npx -y @mcpanalytics/mcp-analytics
+MCP_ANALYTICS_API_KEY=mcp_your_key npx -y @mcp-analytics/mcp-analytics
 # Should output: "[mcp-analytics] Connected to https://api.mcpanalytics.ai. 19 tools available."
 ```
 

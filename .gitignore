@@ -29,3 +29,7 @@ temp/
 mcp-registry-key.pem
 mcp-registry-pub.pem
 node_modules/
+.npmrc
+.Rhistory
+.mcpregistry_github_token
+.mcpregistry_registry_token
