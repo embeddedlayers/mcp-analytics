@@ -8,11 +8,11 @@
 
 <div align="center">
 
-[![Version](https://img.shields.io/badge/version-1.0.3-blue)](https://mcpanalytics.ai)
-[![Platform](https://img.shields.io/badge/Platform-MCP_Compatible-green)](https://mcpanalytics.ai/tools)
-[![License](https://img.shields.io/badge/License-Commercial-orange)](https://mcpanalytics.ai/terms)
+[![Glama Score](https://glama.ai/mcp/servers/embeddedlayers/mcp-analytics/badges/score.svg)](https://glama.ai/mcp/servers/embeddedlayers/mcp-analytics)
+[![npm](https://img.shields.io/npm/v/@mcp-analytics/mcp-analytics)](https://www.npmjs.com/package/@mcp-analytics/mcp-analytics)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-MCP_Compatible-blue)](https://mcpanalytics.ai/install)
 [![Docs](https://img.shields.io/badge/Docs-mcpanalytics.ai-brightgreen)](https://mcpanalytics.ai/docs)
-[![Auth](https://img.shields.io/badge/Auth-OAuth_2.0-purple)](https://mcpanalytics.ai/oauth-setup)
 
 **Every analysis starts with a question. We handle the rest.**
 
