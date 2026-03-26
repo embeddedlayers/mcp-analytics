@@ -25,3 +25,7 @@ build/
 # Temporary files
 *.tmp
 temp/
+# MCP Registry keys
+mcp-registry-key.pem
+mcp-registry-pub.pem
+node_modules/

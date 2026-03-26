@@ -1,0 +1,41 @@
+{
+  "name": "@mcpanalytics/mcp-analytics",
+  "version": "1.0.0",
+  "description": "MCP server for statistical analysis, forecasting, and ML. Connects to MCP Analytics API for interactive HTML reports.",
+  "license": "MIT",
+  "author": "MCP Analytics <support@mcpanalytics.ai>",
+  "homepage": "https://mcpanalytics.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/embeddedlayers/mcp-analytics"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "analytics",
+    "statistics",
+    "machine-learning",
+    "regression",
+    "clustering",
+    "time-series",
+    "data-analysis",
+    "claude",
+    "cursor"
+  ],
+  "type": "module",
+  "bin": {
+    "mcp-analytics": "./src/index.js"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.25.0"
+  }
+}
