@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "ai.mcpanalytics/analytics",
   "description": "Analytics for business data: upload CSV or connect GA4/GSC, run ML/stats, get HTML reports.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": {
     "name": "MCP Analytics",
     "email": "support@mcpanalytics.ai",
@@ -33,7 +33,26 @@
     "oauth2",
     "encrypted"
   ],
+  "packages": {
+    "npm": "@mcpanalytics/mcp-analytics"
+  },
   "remotes": [
+    {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@mcpanalytics/mcp-analytics"],
+      "env": {
+        "MCP_ANALYTICS_API_KEY": "{api_key}"
+      }
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://api.mcpanalytics.ai/mcp/api-key",
+      "authentication": {
+        "type": "api-key",
+        "header": "X-API-Key"
+      }
+    },
     {
       "type": "streamable-http",
       "url": "https://api.mcpanalytics.ai/auth0",

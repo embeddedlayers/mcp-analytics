@@ -46,73 +46,95 @@ Upload any CSV — Shopify orders, Stripe exports, WooCommerce reports, eBay dat
 
 ## Quick Start
 
-### Installation
+### 1. Get an API Key
 
-##### For Claude Desktop
+Sign up free at [app.mcpanalytics.ai](https://app.mcpanalytics.ai), go to account settings, and copy your API key (starts with `mcp_`). You get **2,000 free credits** — no credit card required.
 
-Add to your config file:
-- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
-- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+### 2. Connect
 
-```json
-{
-  "mcpServers": {
-    "mcp-analytics": {
-      "command": "npx",
-      "args": ["-y", "mcp-remote@latest", "https://api.mcpanalytics.ai/auth0"]
-    }
-  }
-}
-```
+Three options — all connect to the same platform with the same tools.
 
-##### For Cursor
+#### Option A: npx Install (Recommended)
 
-Add to `.cursor/config.json` in your project root:
+Works with Claude Desktop, Cursor, Windsurf, and any stdio MCP client. Requires Node.js 18+.
+
+**Claude Desktop** — add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
 
 ```json
 {
   "mcpServers": {
-    "mcp-analytics": {
+    "mcpanalytics": {
       "command": "npx",
-      "args": ["-y", "mcp-remote@latest", "https://api.mcpanalytics.ai/auth0"]
-    }
-  }
-}
-```
-
-##### For VS Code (Continue Extension)
-
-Add to your Continue config at `~/.continue/config.json`:
-
-```json
-{
-  "models": [{
-    "provider": "anthropic",
-    "model": "claude-3-5-sonnet",
-    "mcpServers": {
-      "mcp-analytics": {
-        "command": "npx",
-        "args": ["-y", "mcp-remote@latest", "https://api.mcpanalytics.ai/auth0"]
+      "args": ["-y", "@mcpanalytics/mcp-analytics"],
+      "env": {
+        "MCP_ANALYTICS_API_KEY": "mcp_your_key_here"
       }
     }
-  }]
+  }
 }
 ```
 
-##### For Claude Code
-
-Add to `claude_code_config.json`:
+**Cursor / Windsurf** — add to `.cursor/mcp.json`:
 
 ```json
 {
   "mcpServers": {
-    "mcp-analytics": {
+    "mcpanalytics": {
       "command": "npx",
-      "args": ["-y", "mcp-remote@latest", "https://api.mcpanalytics.ai/auth0"]
+      "args": ["-y", "@mcpanalytics/mcp-analytics"],
+      "env": {
+        "MCP_ANALYTICS_API_KEY": "mcp_your_key_here"
+      }
     }
   }
 }
 ```
+
+**Claude Code** — run in your terminal:
+
+```bash
+claude mcp add mcpanalytics -- npx -y @mcpanalytics/mcp-analytics
+# Then set MCP_ANALYTICS_API_KEY in your environment
+```
+
+#### Option B: Direct API Key (No npm)
+
+For MCP clients that support Streamable HTTP transport with custom headers:
+
+```json
+{
+  "mcpServers": {
+    "mcpanalytics": {
+      "url": "https://api.mcpanalytics.ai/mcp/api-key",
+      "headers": {
+        "X-API-Key": "mcp_your_key_here"
+      }
+    }
+  }
+}
+```
+
+#### Option C: OAuth2 (No API Key)
+
+Zero-config — a browser opens for login on first connection:
+
+```json
+{
+  "mcpServers": {
+    "mcpanalytics": {
+      "url": "https://api.mcpanalytics.ai/auth0"
+    }
+  }
+}
+```
+
+### 3. Start Analyzing
+
+Restart your MCP client. Ask:
+
+- *"Upload sales.csv and find what drives revenue"*
+- *"What statistical test should I use for this survey data?"*
+- *"Forecast next quarter's sales from this time series"*
 
 ## How It Works
 
@@ -394,20 +416,22 @@ MCP Analytics is built by data scientists and engineers passionate about making 
 
 ### Testing Your Connection
 
-After installation, restart your IDE and look for "MCP Analytics" in the available tools. On first use, you'll be prompted to authenticate via OAuth 2.0.
+After installation, restart your MCP client and look for "MCP Analytics" in the available tools. You should see tools like `discover_tools`, `tools_run`, `datasets_upload`, etc.
 
 ```bash
-# To test the connection directly:
-npx -y mcp-remote@latest https://api.mcpanalytics.ai/auth0
+# Test the stdio proxy directly:
+MCP_ANALYTICS_API_KEY=mcp_your_key npx -y @mcpanalytics/mcp-analytics
+# Should output: "[mcp-analytics] Connected to https://api.mcpanalytics.ai. 19 tools available."
 ```
 
 ### Troubleshooting
 
 If MCP Analytics doesn't appear after installation:
 1. Ensure your config file is valid JSON
-2. Restart your IDE completely
-3. Check the IDE's developer console for errors
-4. Verify you have internet connectivity
+2. Restart your MCP client completely
+3. Verify your API key starts with `mcp_`
+4. Check the client's developer console for errors
+5. Try running the npx command in a terminal to see errors
 
 For support: support@mcpanalytics.ai
 
