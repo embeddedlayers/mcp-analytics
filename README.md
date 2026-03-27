@@ -128,6 +128,20 @@ Zero-config — a browser opens for login on first connection:
 }
 ```
 
+#### Browse Tools First (No Account Needed)
+
+Explore the full tool catalog before signing up:
+
+```bash
+# Static metadata (tool names, descriptions, all transport options)
+curl https://api.mcpanalytics.ai/.well-known/mcp.json
+
+# MCP protocol discovery (no auth — works with any MCP client)
+curl -X POST https://api.mcpanalytics.ai/mcp/discover \
+  -H 'Content-Type: application/json' \
+  -d '{"jsonrpc":"2.0","method":"tools/list","id":1,"params":{}}'
+```
+
 ### 3. Start Analyzing
 
 Restart your MCP client. Ask:

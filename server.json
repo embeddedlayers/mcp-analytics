@@ -63,6 +63,13 @@
         "scopes": ["openid", "profile", "email", "execute:tools"],
         "pkce": true
       }
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://api.mcpanalytics.ai/mcp/discover",
+      "authentication": {
+        "type": "none"
+      }
     }
   ],
   "capabilities": {
