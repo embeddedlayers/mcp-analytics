@@ -13,18 +13,18 @@ Last updated: **March 2026**
 These are in progress or shipping soon.
 
 ### Connectors
-- **Shopify live connector** — analyze orders, products, and customers without CSV export ([#TBD])
-- **Stripe live connector** — subscription analytics, MRR, churn directly from Stripe ([#TBD])
+- **Shopify live connector** — analyze orders, products, and customers without CSV export ([#1](https://github.com/embeddedlayers/mcp-analytics/issues/1))
+- **Stripe live connector** — subscription analytics, MRR, churn directly from Stripe ([#2](https://github.com/embeddedlayers/mcp-analytics/issues/2))
 
 ### Analysis Modules
-- **Bayesian A/B testing** — posterior distributions, credible intervals, expected loss
-- **Text/NLP analysis** — sentiment analysis, topic modeling, keyword extraction from text columns
+- **Bayesian A/B testing** — posterior distributions, credible intervals, expected loss ([#8](https://github.com/embeddedlayers/mcp-analytics/issues/8))
+- **Text/NLP analysis** — sentiment analysis, topic modeling, keyword extraction from text columns ([#7](https://github.com/embeddedlayers/mcp-analytics/issues/7))
 - **Causal inference** — difference-in-differences, synthetic control, regression discontinuity
 
 ### Platform
-- **Scheduled reports** — run an analysis on a recurring schedule and get notified
-- **PDF export** — download any interactive report as a formatted PDF
-- **Team workspaces** — share datasets and reports within an organization
+- **Scheduled reports** — run an analysis on a recurring schedule and get notified ([#5](https://github.com/embeddedlayers/mcp-analytics/issues/5))
+- **PDF export** — download any interactive report as a formatted PDF ([#4](https://github.com/embeddedlayers/mcp-analytics/issues/4))
+- **Team workspaces** — share datasets and reports within an organization ([#6](https://github.com/embeddedlayers/mcp-analytics/issues/6))
 
 ---
 
@@ -33,10 +33,10 @@ These are in progress or shipping soon.
 Designed but not yet in active development. Timing depends on demand — upvote the linked issues to help us prioritize.
 
 ### Connectors
-- **HubSpot** — CRM contacts, deals, marketing events
+- **HubSpot** — CRM contacts, deals, marketing events ([#3](https://github.com/embeddedlayers/mcp-analytics/issues/3))
 - **Salesforce** — opportunities, pipeline analytics
 - **QuickBooks** — financial data, P&L analysis
-- **PostgreSQL / MySQL** — direct database connections for internal data
+- **PostgreSQL / MySQL** — direct database connections for internal data ([#12](https://github.com/embeddedlayers/mcp-analytics/issues/12))
 
 ### Analysis Modules
 - **Forecasting ensemble** — combine ARIMA, Prophet, and exponential smoothing with automatic model selection
@@ -45,9 +45,9 @@ Designed but not yet in active development. Timing depends on demand — upvote 
 - **Survey analysis suite** — Likert scales, factor analysis, structural equation modeling
 
 ### Platform
-- **API webhooks** — get notified when analyses complete
-- **Custom report branding** — add your logo and colors to reports
-- **Comparison reports** — run the same analysis on two time periods and highlight changes
+- **API webhooks** — get notified when analyses complete ([#11](https://github.com/embeddedlayers/mcp-analytics/issues/11))
+- **Custom report branding** — add your logo and colors to reports ([#9](https://github.com/embeddedlayers/mcp-analytics/issues/9))
+- **Comparison reports** — run the same analysis on two time periods and highlight changes ([#10](https://github.com/embeddedlayers/mcp-analytics/issues/10))
 - **Dataset versioning** — track changes to your data over time
 
 ---
