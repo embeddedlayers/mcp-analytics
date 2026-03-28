@@ -5,6 +5,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.0.4] — 2026-03-28
+
+### Added
+- **Module Request issue template** — request a custom analysis module directly from GitHub; our autonomous builder can deliver within days
+- **Connector Request issue template** — request new data source integrations
+- **Public roadmap** — see what's planned in [ROADMAP.md](ROADMAP.md)
+- **Output datasets** — analysis results saved as reusable datasets for chaining analyses
+- **Dataset type separation** — cleaner separation between uploaded inputs and generated outputs
+
+### Improved
+- R report pipeline simplified — card data now built in Python, removing external dependencies
+- Discovery accuracy improved with better LLM-generated module overviews
+- Error messages now suggest specific corrective actions with column name hints
+
+---
+
 ## [1.0.3] — 2026-03-01
 
 ### Added
@@ -55,8 +71,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 - Initial release — MCP server at `https://api.mcpanalytics.ai/auth0`
-- Hundreds of statistical analysis modules: regression, clustering, time series, hypothesis testing, customer analytics, machine learning
+- Statistical analysis modules: regression, clustering, time series, hypothesis testing, customer analytics, machine learning
 - CSV upload and analysis
 - Claude Desktop support
-- Free tier: 25 analyses/month
+- Free tier with starter credits
 - Report generation with shareable URLs

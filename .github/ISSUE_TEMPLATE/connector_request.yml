@@ -1,0 +1,43 @@
+name: Connector Request
+description: Request a new data connector — connect your tools directly without CSV exports
+title: "[Connector]: "
+labels: ["connector-request", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        MCP Analytics supports live data connectors so you can analyze data without exporting CSVs. We currently support Google Analytics 4 and Google Search Console, with more planned.
+
+        Tell us what platform you want to connect and we'll prioritize based on demand.
+  - type: input
+    id: platform
+    attributes:
+      label: Platform / Service
+      description: What tool or platform do you want to connect?
+      placeholder: "e.g., Shopify, HubSpot, Stripe, Salesforce, QuickBooks"
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: What would you analyze?
+      description: What questions would you answer with this data?
+      placeholder: "e.g., I want to analyze my Shopify orders to find product bundles that sell well together and predict seasonal demand."
+    validations:
+      required: true
+  - type: dropdown
+    id: current_workaround
+    attributes:
+      label: How do you handle this today?
+      options:
+        - Manual CSV export and upload
+        - Not analyzing this data yet
+        - Using another tool
+        - API scripts I wrote myself
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else — API docs, data volume, specific metrics you need?

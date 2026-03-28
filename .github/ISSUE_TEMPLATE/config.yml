@@ -1,14 +1,14 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
   - name: Documentation
     url: https://mcpanalytics.ai/docs
-    about: Please check our documentation first
-  - name: Discord Community
-    url: https://discord.gg/mcpanalytics
-    about: Get help from our community
+    about: Check our documentation for setup guides and API reference
+  - name: Community Discussions
+    url: https://github.com/embeddedlayers/mcp-analytics/discussions
+    about: Ask questions, share use cases, and get help from the community
   - name: Email Support
     url: mailto:support@mcpanalytics.ai
-    about: Contact our support team for account issues
+    about: Contact our support team for account or billing issues
   - name: Security Issues
     url: mailto:security@mcpanalytics.ai
-    about: Please report security vulnerabilities via email
+    about: Report security vulnerabilities via email (do not use public issues)

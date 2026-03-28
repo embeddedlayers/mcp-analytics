@@ -2,9 +2,7 @@
 
 <div align="center">
 
-![MCP Analytics Banner](https://mcpanalytics.ai/images/github-banner.png)
-
-### Enterprise Statistical Analysis & Machine Learning for AI Assistants
+### Statistical Analysis & Machine Learning for AI Assistants
 
 [![Website](https://img.shields.io/badge/Website-mcpanalytics.ai-blue?style=for-the-badge)](https://mcpanalytics.ai)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-Listed-green?style=for-the-badge)](https://github.com/modelcontextprotocol/registry)
@@ -12,91 +10,61 @@
 
 </div>
 
-## 🚀 What We Do
+## What We Do
 
-MCP Analytics brings professional data science capabilities directly into AI assistants like Claude, Cursor, and VS Code. We provide a Model Context Protocol server that enables:
+MCP Analytics brings professional data science directly into AI assistants like Claude, Cursor, and VS Code. Upload a CSV or connect live data — ask a question in plain English — get an interactive report with charts and AI-written insights.
 
-- **50+ Statistical Analysis Tools** - From basic regression to advanced machine learning
-- **Natural Language Interface** - Just describe what you want to analyze
-- **Enterprise Security** - OAuth2, encryption, isolated processing
-- **Interactive Reports** - Shareable visualizations and insights
-- **Zero Setup** - Cloud-based, works instantly
+- **56 Analysis Modules** — regression, clustering, time series, hypothesis testing, customer analytics, ML
+- **Live Connectors** — Google Analytics 4, Google Search Console, with more planned
+- **Natural Language Interface** — describe your question, we pick the right statistical method
+- **Interactive Reports** — shareable HTML reports with visualizations and plain-English interpretation
+- **Zero Setup** — cloud-based processing, works in 30 seconds
 
-## 🎯 Our Mission
-
-Making advanced analytics accessible to everyone through AI, eliminating the barrier between business questions and statistical insights.
-
-## 📊 Key Products
+## Key Products
 
 ### MCP Analytics Server
-Our flagship MCP server providing comprehensive statistical analysis capabilities:
-- **[mcp-analytics](https://github.com/embeddedlayers/mcp-analytics)** - Official MCP server repository
-- **[Documentation](https://mcpanalytics.ai/docs)** - Complete setup and usage guides
-- **[Tool Catalog](https://mcpanalytics.ai/tools)** - Browse all available analysis methods
+Our MCP server provides the full analytics suite through a single connection:
+- **[mcp-analytics](https://github.com/embeddedlayers/mcp-analytics)** — MCP server repo, issue tracker, and roadmap
+- **[Documentation](https://mcpanalytics.ai/docs)** — setup guides and API reference
+- **[Tool Catalog](https://mcpanalytics.ai/tools)** — browse all available analysis methods
+- **[Sample Reports](https://mcpanalytics.ai/sample-reports.html)** — see real output before you sign up
 
-## 🏢 For Enterprises
+## Quick Start
 
-- **SOC2 Compliance** (In Progress)
-- **GDPR & CCPA Ready**
-- **HIPAA Compatible** (Contact for BAA)
-- **99.9% Uptime SLA**
-- **Dedicated Support**
-
-[Contact Sales →](mailto:sales@mcpanalytics.ai)
-
-## 🛠️ Quick Start
-
-```bash
-# Add to Claude Desktop config
+```json
 {
   "mcpServers": {
-    "mcp-analytics": {
+    "mcpanalytics": {
       "command": "npx",
-      "args": ["-y", "mcp-remote@latest", "https://api.mcpanalytics.ai/auth0"]
+      "args": ["-y", "@mcp-analytics/mcp-analytics"],
+      "env": {
+        "MCP_ANALYTICS_API_KEY": "mcp_your_key_here"
+      }
     }
   }
 }
 ```
 
-## 📈 Stats
+Sign up free at [app.mcpanalytics.ai](https://app.mcpanalytics.ai) — 2,000 credits, no credit card required.
 
-- **50+** Statistical Tools
-- **1M+** Analyses Performed
-- **99.9%** Uptime
-- **<3s** Average Processing Time
+## Community
 
-## 🤝 Community
+- **[GitHub Issues](https://github.com/embeddedlayers/mcp-analytics/issues)** — bug reports, feature requests, module requests
+- **[GitHub Discussions](https://github.com/embeddedlayers/mcp-analytics/discussions)** — questions, show & tell, community help
+- **[Email Support](mailto:support@mcpanalytics.ai)** — account and billing issues
 
-- **[Discord](https://discord.gg/mcpanalytics)** - Join our community
-- **[GitHub Issues](https://github.com/embeddedlayers/mcp-analytics/issues)** - Report bugs or request features
-- **[Blog](https://mcpanalytics.ai/blog)** - Latest updates and tutorials
-
-## 📰 Recent Updates
-
-- 🎉 **Jan 2025** - Listed in official MCP Registry
-- 🚀 **Jan 2025** - Released v1.0.3 with enhanced tool discovery
-- 📊 **Dec 2024** - Added 10 new machine learning algorithms
-- 🔒 **Dec 2024** - Achieved GDPR compliance certification
-
-## 🏆 Recognition
-
-- **MCP Registry** - Official listing
-- **Product Hunt** - Analytics Tool of the Day (Coming Soon)
-- **GitHub** - Trending in #mcp and #data-science
-
-## 📞 Contact
+## Contact
 
 - **Website**: [mcpanalytics.ai](https://mcpanalytics.ai)
 - **Email**: support@mcpanalytics.ai
-- **Sales**: sales@mcpanalytics.ai
 - **Security**: security@mcpanalytics.ai
 
 ---
 
 <div align="center">
 
-**Transform your data analysis workflow with AI**
+**Ask a question. Upload your data. Get an interactive report.**
 
-[Get Started](https://mcpanalytics.ai/signup) • [View Demo](https://mcpanalytics.ai/demo) • [Documentation](https://mcpanalytics.ai/docs)
+[Get Started](https://app.mcpanalytics.ai) · [Sample Reports](https://mcpanalytics.ai/sample-reports.html) · [Documentation](https://mcpanalytics.ai/docs)
 
 </div>

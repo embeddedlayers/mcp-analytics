@@ -19,8 +19,8 @@ jobs:
 
           In the meantime:
           - Check our [documentation](https://mcpanalytics.ai/docs) for answers
-          - Join our [Discord community](https://discord.gg/mcpanalytics) for real-time help
           - Browse [existing issues](https://github.com/embeddedlayers/mcp-analytics/issues) for similar problems
+          - Start a [discussion](https://github.com/embeddedlayers/mcp-analytics/discussions) if you have questions
 
         pr-message: |
           Welcome to MCP Analytics! 🎉

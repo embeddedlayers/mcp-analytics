@@ -1,0 +1,66 @@
+name: Module Request
+description: Request a new analysis module — we can often build and deploy it within days
+title: "[Module]: "
+labels: ["module-request", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        MCP Analytics has an autonomous module builder that produces validated analysis modules from a specification. Well-described requests often get built and deployed within days.
+
+        The more specific you are about your data and the question you're trying to answer, the faster we can build it.
+  - type: textarea
+    id: question
+    attributes:
+      label: What question are you trying to answer?
+      description: Describe the business or research question in plain language.
+      placeholder: "e.g., I want to predict which customers are most likely to churn based on their usage patterns and subscription history."
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: What does your data look like?
+      description: Describe your dataset — column names, data types, approximate row count. A sample row helps a lot.
+      placeholder: |
+        Columns: customer_id, signup_date, last_login, plan_type, monthly_spend, support_tickets, churned (yes/no)
+        ~5,000 rows, CSV export from our billing system
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: What output would be most useful?
+      description: What would the ideal report include? Charts, predictions, scores, segments?
+      placeholder: "e.g., A churn probability score per customer, key risk factors, and a chart showing churn rate by segment."
+  - type: dropdown
+    id: domain
+    attributes:
+      label: What domain is this for?
+      options:
+        - E-commerce / Retail
+        - SaaS / Subscriptions
+        - Marketing / Advertising
+        - Finance / Accounting
+        - Healthcare / Research
+        - HR / People Analytics
+        - Operations / Logistics
+        - Education
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: How soon do you need this?
+      options:
+        - No rush — whenever it's ready
+        - Within a week would be great
+        - Urgent — blocking my work
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else that would help us build the right module? Links to similar analyses, academic papers, specific statistical methods you want?
