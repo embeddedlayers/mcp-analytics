@@ -20,6 +20,14 @@
 
 </div>
 
+<div align="center">
+
+[![Demo Video](assets/demo-preview.png)](https://github.com/embeddedlayers/mcp-analytics/releases/download/v1.0.4/demo.mp4)
+
+*Click to watch: Ask a question → upload data → get an interactive report with AI insights*
+
+</div>
+
 ---
 
 ## The Formula
