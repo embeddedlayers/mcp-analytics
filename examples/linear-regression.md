@@ -1,46 +1,53 @@
-# Linear Regression Example
+# Linear Regression
 
-## Analyzing Sales Data
+**Module:** [`demo__advertising__marketing_spend__linear_regression`](https://mcpanalytics.ai/free/demo__advertising__marketing_spend__linear_regression)
 
-```
-"I have monthly sales data with advertising spend across different channels.
-Can you help me understand which channels drive the most revenue?"
-```
+Upload data with an outcome variable and predictors. Get coefficients, significance tests, model fit, and predictions — find out which factors actually drive your results.
 
-### What MCP Analytics Does:
-
-1. **Discovers the right tool** — `discover_tools('regression advertising spend revenue')` finds the linear regression module
-2. **Uploads your data** — `datasets_upload` securely processes your CSV
-3. **Runs the analysis** — `tools_run` with `analytics__statistical__regression__linear_regression`
-4. **Provides insights**:
-   - Coefficient for each channel (ROI per dollar)
-   - Statistical significance (p-values)
-   - R-squared (model fit)
-   - Predictions for different spend scenarios
-5. **Generates report** — `reports_view` opens interactive visualizations you can share
-
-### Sample Output:
+## The Conversation
 
 ```
-Linear Regression Results:
-- TV Advertising: $3.2 return per $1 spent (p < 0.001)
-- Digital Marketing: $2.8 return per $1 spent (p < 0.001)
-- Print Advertising: $0.9 return per $1 spent (p = 0.42, not significant)
+You: "I have monthly sales data with advertising spend across different channels.
+     Can you help me understand which channels drive the most revenue?"
 
-Model explains 78% of sales variance (R² = 0.78)
+AI:  I'll upload your data and run linear regression.
+
+     [uploads CSV → discovers linear regression module → maps columns → runs analysis]
+
+     Here's what I found:
+
+     📊 Model Results (R² = 0.78 — explains 78% of sales variance)
+
+     • TV Advertising: $3.20 return per $1 spent (p < 0.001, significant)
+     • Digital Marketing: $2.80 return per $1 spent (p < 0.001, significant)
+     • Print Advertising: $0.90 return per $1 spent (p = 0.42, not significant)
+
+     💡 Recommendation
+     TV and digital are your strongest channels. Print isn't statistically
+     significant — the apparent return could be random noise. Consider
+     reallocating print budget to TV or digital.
+
+     [View full interactive report →]
 ```
 
-### Try It Yourself:
+## When to Use This
 
-Upload a CSV with outcome and predictor columns and ask:
+- Understanding which factors predict an outcome
+- Measuring ROI across marketing channels
+- Salary prediction from experience, education, role
+- Any "what drives Y?" question with numeric data
+
+## Data Format
+
+CSV with one outcome column (what you're predicting) and one or more predictor columns. Numeric data works best. Categorical predictors are automatically encoded.
+
+## Try It
+
+Upload your data and ask:
 
 ```
 "Run linear regression to predict revenue from our ad spend columns.
 Show me which channels are statistically significant."
 ```
 
-The AI will call `discover_tools`, upload your data, run the module, and return an interactive report — all in one conversation.
-
----
-
-[More examples →](../examples/) | [Sample reports →](https://mcpanalytics.ai/sample-reports.html)
+[View sample report →](https://mcpanalytics.ai/free/demo__advertising__marketing_spend__linear_regression)
