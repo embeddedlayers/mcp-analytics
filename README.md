@@ -1,5 +1,7 @@
 # MCP Analytics Suite
 
+[![SafeSkill 92/100](https://img.shields.io/badge/SafeSkill-92%2F100_Verified%20Safe-brightgreen)](https://safeskill.dev/scan/embeddedlayers-mcp-analytics)
+
 **MCP server for data analytics** — Shopify, Stripe, WooCommerce, eBay, CSV files, and more. Run statistical analysis, forecasting, and machine learning directly in Claude or Cursor. Ask a question, upload your data, get an interactive report.
 
 > **This is the public listing and documentation repository.** Issues, feature requests, and examples live here. The API server code is maintained separately.
