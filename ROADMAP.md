@@ -10,7 +10,7 @@ Last updated: **April 2026**
 
 ## Status: v2 rebuild in progress
 
-We are actively rebuilding the platform (codename **v2**). Everything under **Now** below is part of this rebuild — some of it is partially live on [mcpanalytics.ai](https://mcpanalytics.ai) behind a beta banner, and some is being reworked end-to-end. Expect rough edges during this period. If you want to wait for a stable release, subscribe to the [launch newsletter](https://mcpanalytics.ai/#newsletter-footer). Tracking: see the pinned issue on the [issues tab](https://github.com/embeddedlayers/mcp-analytics/issues).
+We are actively rebuilding the platform (codename **v2**). Everything under **Now** below is part of this rebuild — some of it is partially live on [mcpanalytics.ai](https://mcpanalytics.ai) behind a beta banner, and some is being reworked end-to-end. Expect rough edges during this period. If you want to wait for a stable release, subscribe to the [launch newsletter](https://mcpanalytics.ai/#newsletter-footer). Tracking: [#22 — v2 rebuild: what's changing, what to expect](https://github.com/embeddedlayers/mcp-analytics/issues/22).
 
 ---
 

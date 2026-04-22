@@ -11,8 +11,8 @@ The platform is being actively rebuilt (codename **v2**). The live site at
 [mcpanalytics.ai](https://mcpanalytics.ai) runs behind a beta banner during
 this period — signup is open for testing, but some features are incomplete
 or unstable while the rewrite lands. The v2 work covers the discovery layer,
-module runtime, report rendering pipeline, and connector framework. Pinned
-issue on the [issues tab](https://github.com/embeddedlayers/mcp-analytics/issues)
+module runtime, report rendering pipeline, and connector framework.
+[#22 — v2 rebuild: what's changing, what to expect](https://github.com/embeddedlayers/mcp-analytics/issues/22)
 tracks scope and progress. This section will be replaced with a concrete
 `[2.0.0]` entry when the rebuild ships.
 
