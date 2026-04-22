@@ -1,5 +1,7 @@
 # MCP Analytics Suite
 
+> ⚠️ **Beta — v2 rebuild in progress.** We're actively rebuilding the platform. Some features are incomplete or unstable right now. You can sign up and test at [mcpanalytics.ai](https://mcpanalytics.ai), or subscribe to the [launch newsletter](https://mcpanalytics.ai/#newsletter-footer). Details: [pinned issue](https://github.com/embeddedlayers/mcp-analytics/issues?q=is%3Aissue+is%3Aopen+v2).
+
 **MCP server for data analytics** — Shopify, Stripe, WooCommerce, eBay, CSV files, and more. Run statistical analysis, forecasting, and machine learning directly in Claude or Cursor. Ask a question, upload your data, get an interactive report.
 
 > **This is the public listing and documentation repository.** Issues, feature requests, and examples live here. The API server code is maintained separately.

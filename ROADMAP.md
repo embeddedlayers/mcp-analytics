@@ -2,15 +2,21 @@
 
 What we're building, what's next, and what we're exploring. Updated monthly.
 
-Last updated: **March 2026**
+Last updated: **April 2026**
 
 > Have a feature request? [Open an issue](https://github.com/embeddedlayers/mcp-analytics/issues/new/choose) or [start a discussion](https://github.com/embeddedlayers/mcp-analytics/discussions).
 
 ---
 
+## Status: v2 rebuild in progress
+
+We are actively rebuilding the platform (codename **v2**). Everything under **Now** below is part of this rebuild — some of it is partially live on [mcpanalytics.ai](https://mcpanalytics.ai) behind a beta banner, and some is being reworked end-to-end. Expect rough edges during this period. If you want to wait for a stable release, subscribe to the [launch newsletter](https://mcpanalytics.ai/#newsletter-footer). Tracking: see the pinned issue on the [issues tab](https://github.com/embeddedlayers/mcp-analytics/issues).
+
+---
+
 ## Now (Active Development)
 
-These are in progress or shipping soon.
+These are in progress or shipping soon (all part of the v2 rebuild above).
 
 ### Connectors
 - **Shopify live connector** — analyze orders, products, and customers without CSV export ([#1](https://github.com/embeddedlayers/mcp-analytics/issues/1))

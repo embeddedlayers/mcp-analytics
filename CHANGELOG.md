@@ -5,6 +5,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [Unreleased] — v2 rebuild in progress
+
+The platform is being actively rebuilt (codename **v2**). The live site at
+[mcpanalytics.ai](https://mcpanalytics.ai) runs behind a beta banner during
+this period — signup is open for testing, but some features are incomplete
+or unstable while the rewrite lands. The v2 work covers the discovery layer,
+module runtime, report rendering pipeline, and connector framework. Pinned
+issue on the [issues tab](https://github.com/embeddedlayers/mcp-analytics/issues)
+tracks scope and progress. This section will be replaced with a concrete
+`[2.0.0]` entry when the rebuild ships.
+
+---
+
 ## [1.0.4] — 2026-03-28
 
 ### Added
