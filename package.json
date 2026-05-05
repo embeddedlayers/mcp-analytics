@@ -1,7 +1,7 @@
 {
   "name": "@mcp-analytics/mcp-analytics",
   "version": "1.0.0",
-  "description": "MCP server for statistical analysis, forecasting, and ML. Connects to MCP Analytics API for interactive HTML reports.",
+  "description": "MCP client for adhoc analysis generation — bring data and a question, a team of specialist agents builds a custom analysis module you own. Citable, reproducible, rerunnable. Works in Claude, Cursor, and any MCP client. (Beta — v2 rebuild.)",
   "license": "MIT",
   "author": "MCP Analytics <support@mcpanalytics.ai>",
   "homepage": "https://mcpanalytics.ai",
