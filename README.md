@@ -2,7 +2,7 @@
 
 > ⚠️ **Beta — v2 rebuild in progress.** We're actively rebuilding the platform. Some features are incomplete or unstable right now. You can sign up and test at [mcpanalytics.ai](https://mcpanalytics.ai), or subscribe to the [launch newsletter](https://mcpanalytics.ai/#newsletter-footer). Details: [#22 — v2 rebuild: what's changing, what to expect](https://github.com/embeddedlayers/mcp-analytics/issues/22).
 
-**MCP server for data analytics** — Shopify, Stripe, WooCommerce, eBay, CSV files, and more. Run statistical analysis, forecasting, and machine learning directly in Claude or Cursor. Ask a question, upload your data, get an interactive report.
+**Adhoc analysis generation, on your data, on demand.** Bring a CSV (or connect a live source — Shopify, Stripe, GA4, GSC, and more) and a question. A standing team of specialist agents builds a custom analysis module for your specific data, validates the methodology, and ships back a citable, interactive report. The module is **yours** — it lives in your library, reruns on fresh data for a fraction of the creation cost, and is queryable from Claude, Cursor, or any MCP client. The work compounds.
 
 > **This is the public listing and documentation repository.** Issues, feature requests, and examples live here. The API server code is maintained separately.
 
@@ -16,7 +16,7 @@
 [![Platform](https://img.shields.io/badge/Platform-MCP_Compatible-blue)](https://mcpanalytics.ai/install)
 [![Docs](https://img.shields.io/badge/Docs-mcpanalytics.ai-brightgreen)](https://mcpanalytics.ai/docs)
 
-**Every analysis starts with a question. We handle the rest.**
+**Hire the team. Own the analysis. Rerun forever.**
 
 [🚀 Quick Start](#quick-start) • [🔄 How It Works](#how-it-works) • [🛠️ MCP Tools](#mcp-tools) • [🛡️ Security](#security--compliance) • [📖 Documentation](#documentation)
 
@@ -32,27 +32,23 @@
 
 ---
 
-## The Formula
-
-<div align="center">
-  <h3>Question + Dataset = Analytics</h3>
-  <p>Transform business questions into actionable insights through intelligent discovery</p>
-</div>
-
 ## Overview
 
-MCP Analytics Suite is an intelligent analytics platform that understands what you want to analyze and automatically selects the right approach. No statistics degree required — just describe your business question and let our AI-powered discovery handle the complexity.
+You bring data and a question. A pipeline of specialist agents — spec drafter, builder, verifier, fixer, deployer — turns your question into a custom analysis module for your data. The module produces an interactive report: charts, AI-narrated insights, exportable PDF, embedded source code, citable. After creation, the module joins your private library — query it from any MCP client, rerun on fresh data with one call, share with collaborators on your terms.
 
-Upload any CSV — Shopify orders, Stripe exports, WooCommerce reports, eBay data, ad platform reports, or any tabular data. Connect live data from **Google Analytics 4** and **Google Search Console** via native connectors. Run regression, forecasting, clustering, A/B testing, customer LTV, churn prediction, and hundreds of other statistical methods. Get back interactive HTML reports with charts and AI-written insights.
+**Cornerstone modules** ship pre-built (t-tests, regression, churn, segmentation, forecasting, customer LTV, A/B testing, time series, survival analysis, and more) so you can see a finished report in under a minute and verify the team can build things that work. **Custom module creation** is the named revenue event — pay once to build the capability, own it, rerun for a fraction of the creation price.
 
-### Why MCP Analytics?
+Connect data however it lives: CSV upload, public URL, or live OAuth connectors for Shopify, Stripe, Google Analytics 4, and Google Search Console (more coming). Once a connector is linked, every rerun pulls fresh data automatically — no re-export step.
 
-- **Intelligent Discovery**: Automatically finds the right analytical approach
-- **Complete Workflow**: From question to insight in one seamless flow
-- **Zero Setup**: Cloud-based processing, works instantly
-- **Enterprise Security**: OAuth2, encryption, isolated processing
-- **Comprehensive Suite**: Full range of analytical capabilities
-- **Interactive Reports**: Shareable visualizations with AI insights
+### Why MCP Analytics
+
+- **Citable** — APA / MLA / Chicago / BibTeX in one click, ready for papers, decks, and regulatory filings
+- **Sourceable** — R source code embedded in every report; a skeptical reader can run it and get the same answer
+- **Reproducible** — fixed seeds, Docker isolation, validated methods; same input → same output, forever
+- **Yours** — every commissioned module is private to your account; rerun on fresh data, query across your portfolio
+- **MCP-native** — query the library from Claude, Cursor, Windsurf, or any MCP client
+- **Secure** — OAuth2, encryption at rest, isolated container processing per analysis
+- **Honest** — when an analysis has issues, the team gives you a free re-run; the relationship is built on the report being right
 
 ## Quick Start
 
