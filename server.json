@@ -1,8 +1,8 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "ai.mcpanalytics/analytics",
-  "description": "Analytics for business data: upload CSV or connect GA4/GSC, run ML/stats, get HTML reports.",
-  "version": "1.0.5",
+  "description": "The statistical analyst in your AI chat \u2014 validated, citable, re-runnable analysis of your data.",
+  "version": "1.0.6",
   "author": {
     "name": "MCP Analytics",
     "email": "support@mcpanalytics.ai",
@@ -22,29 +22,20 @@
   ],
   "keywords": [
     "statistics",
-    "machine-learning",
+    "data-analysis",
+    "reports",
+    "citable",
+    "reproducible",
     "regression",
     "clustering",
     "time-series",
-    "data-analysis",
-    "arima",
-    "xgboost",
-    "bayesian",
+    "machine-learning",
+    "snapshot",
+    "atlas",
     "oauth2",
     "encrypted"
   ],
-  "packages": {
-    "npm": "@mcp-analytics/mcp-analytics"
-  },
   "remotes": [
-    {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@mcp-analytics/mcp-analytics"],
-      "env": {
-        "MCP_ANALYTICS_API_KEY": "{api_key}"
-      }
-    },
     {
       "type": "streamable-http",
       "url": "https://api.mcpanalytics.ai/mcp/api-key",
@@ -60,7 +51,12 @@
         "type": "oauth2",
         "authorizationUrl": "https://api.mcpanalytics.ai/oauth2/authorize",
         "tokenUrl": "https://api.mcpanalytics.ai/oauth2/token",
-        "scopes": ["openid", "profile", "email", "execute:tools"],
+        "scopes": [
+          "openid",
+          "profile",
+          "email",
+          "execute:tools"
+        ],
         "pkce": true
       }
     },
@@ -79,19 +75,19 @@
   },
   "examples": [
     {
-      "title": "Run Linear Regression",
-      "description": "Analyze relationships between variables with linear regression",
-      "code": "Use discover_tools('predict sales regression') then tools_run with your dataset"
+      "title": "Instant Snapshot report",
+      "description": "Commission an instant automated analysis of your data",
+      "code": "create_analysis(fuzzy_request='does ad spend drive sales?', dataset_ref='uuid://...', tier='snapshot')"
     },
     {
-      "title": "Customer Segmentation",
-      "description": "Segment customers using K-means clustering",
-      "code": "Use tools_run with 'analytics__ml__clustering__kmeans' on customer data"
+      "title": "Commission a deep analysis (Atlas)",
+      "description": "A durable, re-runnable analysis module built for your question (~1 hour, never billed on failure)",
+      "code": "create_analysis(fuzzy_request='what drives churn?', dataset_ref='uuid://...', tier='atlas') then build_status(pipeline_id)"
     },
     {
-      "title": "Time Series Forecasting",
-      "description": "Forecast future values with ARIMA",
-      "code": "Use tools_run with 'analytics__statistical__time_series__arima' on historical data"
+      "title": "Re-run an analysis on fresh data",
+      "description": "Your commissioned modules re-run anytime \u2014 including on live connector data",
+      "code": "run_analysis(tool_name='<your module>', taskList={inputs: {dataset: 'connector://mcpanalytics_ga4/report?...'}})"
     }
   ],
   "documentation": {
