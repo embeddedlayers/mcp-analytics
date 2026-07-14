@@ -103,7 +103,7 @@ if (API_KEY) {
 } else {
   process.stderr.write(
     "[mcp-analytics] No API key set. Running in inspection mode with static catalog.\n" +
-      "  Set MCP_ANALYTICS_API_KEY for live access. Get a free key at https://app.mcpanalytics.ai\n"
+      "  Set MCP_ANALYTICS_API_KEY for live access. Get a free key at https://account.mcpanalytics.ai\n"
   );
 }
 
@@ -124,7 +124,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       content: [
         {
           type: "text",
-          text: "MCP Analytics API key required. Set MCP_ANALYTICS_API_KEY in your environment.\nGet a free key at https://app.mcpanalytics.ai",
+          text: "MCP Analytics API key required. Set MCP_ANALYTICS_API_KEY in your environment.\nGet a free key at https://account.mcpanalytics.ai",
         },
       ],
       isError: true,

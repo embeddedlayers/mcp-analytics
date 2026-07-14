@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "mcp-analytics",
-      "description": "Upload CSV files or connect Shopify, Stripe, WooCommerce, and more. Run 100+ analysis types — regression, clustering, forecasting, A/B tests, churn prediction — and get interactive HTML reports with charts and AI insights.",
+      "description": "Upload a CSV, ask a question, and a team of specialist agents builds a custom analysis you own — regression, clustering, forecasting, A/B tests, churn prediction — delivered as an interactive HTML report with charts and AI insights.",
       "version": "1.0.0",
       "author": {
         "name": "MCP Analytics",

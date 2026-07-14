@@ -1,57 +1,52 @@
 # Pricing — MCP Analytics
 
-Full pricing details at [mcpanalytics.ai/pricing](https://mcpanalytics.ai/pricing.html).
+Full, current pricing at [mcpanalytics.ai/pricing](https://mcpanalytics.ai/pricing.html). How the credit model works: [How Credits Work](https://mcpanalytics.ai/how-credits-work.html).
+
+## The Credit Model
+
+Everything runs on credits. You get **2,000 welcome credits on signup** — no credit card required — enough to commission your first analyses and see real reports.
+
+- A **module run** (re-running an analysis you own on fresh data) costs about 200 credits.
+- A **new custom analysis** is priced by depth — from a fast Snapshot up to a full Deck study.
+- **You only pay if the build succeeds.** A failed build is never billed.
+
+## Choose Your Depth
+
+| Tier | What you get | Time |
+|------|-------------|------|
+| **Snapshot** | One chart and a verified insight — an instant read | ~2 min |
+| **JSON** | One computed statistical answer, deployed as a re-runnable tool | ~5 min |
+| **Brief** | The computed answer on a one-page shareable report | ~7 min |
+| **Deck** | The full study — a durable, verified module you own and re-run forever | 30–45 min |
+
+Current per-tier credit prices are listed at [mcpanalytics.ai/tiers](https://mcpanalytics.ai/tiers.html).
 
 ## Plans
 
-### Free
+### Pay As You Go
 
-- 25 analyses per month
-- CSV upload and analysis
-- Interactive HTML reports
-- No credit card required
+Buy credit packs, use anytime — credits never expire. Larger packs give a better per-credit rate. Includes every analysis module, interactive HTML reports, PDF export with citations, embedded R source code, and custom analysis creation.
 
 ### Pro
 
-- Higher monthly analysis quota
-- All statistical methods and ML modules
-- Data connector access (GA4, GSC)
-- Report sharing and permanent URLs
-- Priority processing
+A monthly credit allowance at a discounted rate, plus deeper research-grade AI insights, a permanent report archive, longer dataset retention, larger uploads, and priority support.
 
 ### Business
 
-- Higher quotas with overage billing
-- Team access
-- Advanced connectors
-- Priority support
+A larger monthly allowance, unlimited users with no per-seat fees, live connectors (Google Analytics 4, Google Search Console), permanent dataset retention, and an onboarding call where we run your first analysis with you.
 
----
+### Enterprise
 
-## AI Add-On
+Custom contract with SLA — unlimited credits, white-glove custom modules, custom connectors, and a dedicated CSM. Contact [sales@mcpanalytics.ai](mailto:sales@mcpanalytics.ai).
 
-The **Agent Advisor** — the conversational AI layer that interprets results, suggests next steps, and guides your analysis — is available as an add-on across paid plans.
+## Included at Every Level
 
-| Feature | Free | Pro | Business |
-|---------|------|-----|----------|
-| Analyses/month | 25 | Higher quota | Higher quota |
-| CSV upload | ✅ | ✅ | ✅ |
-| All analysis modules | ✅ | ✅ | ✅ |
-| Data connectors | — | ✅ | ✅ |
-| Report sharing | ✅ | ✅ | ✅ |
-| Agent Advisor | Add-on | Add-on | Add-on |
-
----
-
-## Rate Limits
-
-Rate limits apply per subscription tier. Limits are documented in your account dashboard. Overage is billed per analysis on Business plans.
-
----
-
-## Enterprise
-
-For high-volume use, compliance requirements, or custom integrations: [sales@mcpanalytics.ai](mailto:sales@mcpanalytics.ai)
+- Every analysis module — statistics, ML, commerce, operations
+- Interactive HTML reports with AI insights
+- PDF export with methodology and citations
+- R source code in every report — reproducible by anyone
+- **doOver** — a free re-run when a report has an issue
+- BYOK — bring your own Anthropic key via the API
 
 ---
 

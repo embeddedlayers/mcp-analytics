@@ -2,21 +2,21 @@
 
 What we're building, what's next, and what we're exploring. Updated monthly.
 
-Last updated: **April 2026**
+Last updated: **July 2026**
 
 > Have a feature request? [Open an issue](https://github.com/embeddedlayers/mcp-analytics/issues/new/choose) or [start a discussion](https://github.com/embeddedlayers/mcp-analytics/discussions).
 
 ---
 
-## Status: v2 rebuild in progress
+## Status: v2 is live
 
-We are actively rebuilding the platform (codename **v2**). Everything under **Now** below is part of this rebuild — some of it is partially live on [mcpanalytics.ai](https://mcpanalytics.ai) behind a beta banner, and some is being reworked end-to-end. Expect rough edges during this period. If you want to wait for a stable release, subscribe to the [launch newsletter](https://mcpanalytics.ai/#newsletter-footer). Tracking: [#22 — v2 rebuild: what's changing, what to expect](https://github.com/embeddedlayers/mcp-analytics/issues/22).
+The v2 rebuild has shipped. The platform now runs the full commissioned-analysis pipeline with four depth tiers — **Snapshot** (instant read), **JSON** (computed answer as a re-runnable tool), **Brief** (one-page report), and **Deck** (full commissioned study you own). Rebuild history: [#22](https://github.com/embeddedlayers/mcp-analytics/issues/22).
 
 ---
 
 ## Now (Active Development)
 
-These are in progress or shipping soon (all part of the v2 rebuild above).
+These are in progress or shipping soon.
 
 ### Connectors
 - **Shopify live connector** — analyze orders, products, and customers without CSV export ([#1](https://github.com/embeddedlayers/mcp-analytics/issues/1))
@@ -29,7 +29,6 @@ These are in progress or shipping soon (all part of the v2 rebuild above).
 
 ### Platform
 - **Scheduled reports** — run an analysis on a recurring schedule and get notified
-- **PDF export** — download any interactive report as a formatted PDF ([#4](https://github.com/embeddedlayers/mcp-analytics/issues/4))
 - **Team workspaces** — share datasets and reports within an organization
 
 ---
@@ -75,6 +74,9 @@ Things we're thinking about. No timeline yet.
 
 | Feature | Version | Date |
 |---------|---------|------|
+| Four depth tiers — Snapshot / JSON / Brief / Deck | v2 | Jul 2026 |
+| Commissioned analysis pipeline (`create_analysis` / `build_status`) | v2 | Jun 2026 |
+| PDF export with methodology and citations ([#4](https://github.com/embeddedlayers/mcp-analytics/issues/4)) | v2 | Jun 2026 |
 | GA4 connector | 1.0.3 | Mar 2026 |
 | Google Search Console connector | 1.0.3 | Mar 2026 |
 | Agent Advisor (conversational AI) | 1.0.3 | Mar 2026 |
@@ -87,7 +89,7 @@ Things we're thinking about. No timeline yet.
 ## How We Prioritize
 
 1. **User demand** — issues and module requests with the most upvotes ship first
-2. **Build feasibility** — our autonomous module builder can ship new analysis types in days, so module requests often move fast
+2. **Build feasibility** — our module build pipeline can ship new analysis types in days, so module requests often move fast
 3. **Strategic value** — connectors and platform features that unlock new use cases
 
 The fastest way to get something built: [open a module request](https://github.com/embeddedlayers/mcp-analytics/issues/new?template=module_request.yml) with a clear description of your data and the question you're trying to answer.

@@ -18,7 +18,7 @@ connector://mcpanalytics_ga4/stream?property_id=YOUR_PROPERTY_ID&dimensions=date
 - Conversion funnel analysis
 - Audience segmentation
 
-**Setup:** Your GA4 property must be linked in your [account settings](https://mcpanalytics.ai/account). Uses read-only OAuth credentials.
+**Setup:** Your GA4 property must be linked in your [account settings](https://account.mcpanalytics.ai). Uses read-only OAuth credentials.
 
 ---
 
@@ -36,13 +36,13 @@ connector://mcpanalytics_gsc/stream?site_url=sc-domain:yourdomain.com&dimensions
 - Page-level search performance
 - Seasonal query trends
 
-**Setup:** Your GSC property must be verified and linked in your [account settings](https://mcpanalytics.ai/account).
+**Setup:** Your GSC property must be verified and linked in your [account settings](https://account.mcpanalytics.ai).
 
 ---
 
 ## CSV / File Upload
 
-Any data source can be analyzed via CSV upload. Use `datasets_upload` to upload a file, then reference it in `tools_run`.
+Any data source can be analyzed via CSV upload. Use `datasets_upload` to upload a file, then reference it in `create_analysis` or `run_analysis`.
 
 **Supported file types:** CSV, JSON
 
@@ -73,4 +73,4 @@ Additional native connectors are planned. Submit a feature request via [GitHub I
 
 ---
 
-[Full docs →](https://mcpanalytics.ai/docs.html) | [Account settings →](https://mcpanalytics.ai/account)
+[Full docs →](https://mcpanalytics.ai/docs.html) | [Account settings →](https://account.mcpanalytics.ai)

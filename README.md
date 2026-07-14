@@ -1,8 +1,6 @@
 # MCP Analytics Suite
 
-> ⚠️ **Beta — v2 rebuild in progress.** We're actively rebuilding the platform. Some features are incomplete or unstable right now. You can sign up and test at [mcpanalytics.ai](https://mcpanalytics.ai), or subscribe to the [launch newsletter](https://mcpanalytics.ai/#newsletter-footer). Details: [#22 — v2 rebuild: what's changing, what to expect](https://github.com/embeddedlayers/mcp-analytics/issues/22).
-
-**Adhoc analysis generation, on your data, on demand.** Bring a CSV (or connect a live source — Shopify, Stripe, GA4, GSC, and more) and a question. A standing team of specialist agents builds a custom analysis module for your specific data, validates the methodology, and ships back a citable, interactive report. The module is **yours** — it lives in your library, reruns on fresh data for a fraction of the creation cost, and is queryable from Claude, Cursor, or any MCP client. The work compounds.
+**The statistical analyst in your AI chat.** Bring a CSV (or connect a live source) and a question. A standing team of specialist agents builds a custom analysis specific to your data, validates the methodology, and ships back a citable, interactive report. The analysis is **yours** — it lives in your library, reruns on fresh data for a fraction of the creation cost, and is queryable from Claude, Cursor, or any MCP client. The work compounds.
 
 > **This is the public listing and documentation repository.** Issues, feature requests, and examples live here. The API server code is maintained separately.
 
@@ -34,11 +32,24 @@
 
 ## Overview
 
-You bring data and a question. A pipeline of specialist agents — spec drafter, builder, verifier, fixer, deployer — turns your question into a custom analysis module for your data. The module produces an interactive report: charts, AI-narrated insights, exportable PDF, embedded source code, citable. After creation, the module joins your private library — query it from any MCP client, rerun on fresh data with one call, share with collaborators on your terms.
+You bring data and a question. A pipeline of specialist agents — spec drafter, builder, verifier, fixer, deployer — turns your question into a custom analysis for your data. The result is an interactive report: charts, AI-narrated insights, exportable PDF, embedded source code, citable. Every commissioned analysis joins your private library — query it from any MCP client, rerun on fresh data with one call, share with collaborators on your terms.
 
-**Cornerstone modules** ship pre-built (t-tests, regression, churn, segmentation, forecasting, customer LTV, A/B testing, time series, survival analysis, and more) so you can see a finished report in under a minute and verify the team can build things that work. **Custom module creation** is the named revenue event — pay once to build the capability, own it, rerun for a fraction of the creation price.
+**Cornerstone modules** ship pre-built (t-tests, regression, churn, segmentation, forecasting, customer LTV, A/B testing, time series, survival analysis, and more) so you can see a finished report in under a minute and verify the team can build things that work. **Custom analysis creation** is the named revenue event — pay once to build the capability, own it, rerun for a fraction of the creation price. A build that fails is never billed.
 
-Connect data however it lives: CSV upload, public URL, or live OAuth connectors for Shopify, Stripe, Google Analytics 4, and Google Search Console (more coming). Once a connector is linked, every rerun pulls fresh data automatically — no re-export step.
+Connect data however it lives: CSV upload, public URL, or live OAuth connectors for Google Analytics 4 and Google Search Console (more coming). Once a connector is linked, every rerun pulls fresh data automatically — no re-export step.
+
+### Choose Your Depth — Four Tiers
+
+Every analysis runs through the same validated pipeline — you choose how far it goes:
+
+| Tier | What you get | Time |
+|------|-------------|------|
+| **Snapshot** | One chart and a verified insight — an instant read of your data, covered by your welcome credits | ~2 min |
+| **JSON** | One computed statistical answer — the numbers and the method — deployed as a tool you re-run on fresh data | ~5 min |
+| **Brief** | The computed answer, presented — chart, key figures, and method on a single shareable page | ~7 min |
+| **Deck** | The full study — a complete statistical report built to your brief and independently verified; a durable module you own and re-run forever | 30–45 min |
+
+More rigor outranks more charts: going deeper buys real statistical methods — hypothesis tests, regression, diagnostics — not just more cards. You pay for depth, and only if the build succeeds. [How the tiers work →](https://mcpanalytics.ai/tiers.html)
 
 ### Why MCP Analytics
 
@@ -54,7 +65,7 @@ Connect data however it lives: CSV upload, public URL, or live OAuth connectors 
 
 ### 1. Get an API Key
 
-Sign up free at [app.mcpanalytics.ai](https://app.mcpanalytics.ai), go to account settings, and copy your API key (starts with `mcp_`). You get **2,000 free credits** — no credit card required.
+Sign up free at [account.mcpanalytics.ai](https://account.mcpanalytics.ai), go to account settings, and copy your API key (starts with `mcp_`). You get **2,000 welcome credits** — no credit card required.
 
 ### 2. Connect
 
@@ -160,28 +171,34 @@ Restart your MCP client. Ask:
 
 ### The MCP Analytics Workflow
 
-1. **Ask Your Question** - Describe what you want to analyze in natural language
-2. **Intelligent Discovery** - `tools.discover` finds the right analytical approach
-3. **Data Upload** - `datasets.upload` securely processes your data
-4. **Automated Analysis** - `tools.run` executes with optimal configuration
-5. **Interactive Results** - `reports.view` delivers shareable insights
+1. **Upload your data** — `datasets_upload` securely processes your CSV (or reuse an existing dataset / connected source)
+2. **Commission the analysis** — `create_analysis` takes your question in plain language, your dataset, and the tier you choose (snapshot, json, brief, or deck)
+3. **Watch it build** — `build_status` reports progress, queue position, and the report link when done
+4. **Get the report** — `reports_view` delivers the interactive report; `report_cards` displays individual cards inline
+5. **Rerun forever** — `run_analysis` re-runs any analysis you own on fresh data for a fraction of the creation cost
 
 ```
 User: "What drives our sales growth?"
 MCP Analytics:
-  → Discovers regression and correlation methods
-  → Configures analysis for your data structure
-  → Runs multiple analytical approaches
-  → Returns comprehensive report with insights
+  → Scopes the right statistical method for your data's shape
+  → Writes validated R in an isolated container — deterministic, fixed seeds
+  → Runs it, then independently verifies numbers and narrative
+  → Returns a citable, interactive report you own
 ```
 
 ## MCP Tools
 
 The platform provides a complete suite of MCP tools for end-to-end analytics:
 
-### Core Analytics Tools
-- **`discover_tools`** - Natural language tool discovery (5-signal semantic search)
-- **`tools_run`** - Execute an analysis module on your data
+### Analysis
+- **`create_analysis`** - Commission a new analysis from a plain-language question, at the tier you choose
+- **`build_status`** - Track a build: progress, queue position, report link
+- **`run_analysis`** - Re-run an analysis you own (or one discovered via `discover_tools`) on fresh data
+- **`modify_analysis`** - Request changes to an existing analysis
+- **`module_request`** - Request a new analysis capability
+
+### Discovery
+- **`discover_tools`** - Natural language tool discovery (semantic search)
 - **`tools_info`** - Get tool documentation and schema
 - **`tools_schema`** - Inspect column requirements for a tool
 
@@ -200,10 +217,12 @@ The platform provides a complete suite of MCP tools for end-to-end analytics:
 - **`reports_view`** - Open an interactive HTML report
 - **`reports_list`** - List your reports
 - **`reports_search`** - Semantic search across past analyses
+- **`report_cards`** / **`cards_list`** / **`cards_customize`** / **`cards_reset`** - Display and customize individual report cards
 - **`agent_advisor`** - Conversational AI that guides analysis and interprets results
 
 ### Platform Tools
-- **`billing`** - Usage and subscription management
+- **`billing`** - Usage and credit management
+- **`account_link`** - Link your MCP client to your account
 - **`about`** - Platform information and status
 
 ## Features
@@ -317,7 +336,7 @@ Claude: [Applies ARIMA, generates predictions with confidence intervals]
 - **Secure Processing**: Isolated containers per analysis
 - **Enterprise Options**: Contact us for compliance requirements
 
-[**Read full security documentation →**](https://mcpanalytics.ai/security)
+[**Read full security documentation →**](SECURITY.md)
 
 ## Architecture
 
@@ -402,9 +421,9 @@ flowchart TB
 - [**Quick Start Guide**](docs/quickstart.md) - Get running in under a minute
 - [**Architecture**](docs/ARCHITECTURE.md) - How the platform works
 - [**Connectors**](docs/connectors.md) - GA4, GSC, and CSV data sources
-- [**Pricing**](docs/pricing.md) - Plans and limits
+- [**Pricing**](docs/pricing.md) - Credits, tiers, and plans
+- [**How Credits Work**](https://mcpanalytics.ai/how-credits-work.html) - The credit model explained
 - [**Security**](SECURITY.md) - Security & compliance details
-- [**API Reference**](https://api.mcpanalytics.ai/docs) - Complete API documentation
 - [**Tutorials**](https://mcpanalytics.ai/tutorials) - Step-by-step guides
 
 ## Support
@@ -426,7 +445,7 @@ flowchart TB
 | **Visualizations** | ✅ Interactive | ✅ Dashboards | ❌ | ❌ |
 | **Shareable Reports** | ✅ | ❌ | ❌ | ❌ |
 
-[**Detailed comparison →**](https://mcpanalytics.ai/comparisons)
+[**Detailed comparison →**](https://mcpanalytics.ai/compare.html)
 
 ## About MCP Analytics
 
@@ -436,12 +455,12 @@ MCP Analytics is built by data scientists and engineers passionate about making 
 
 ### Testing Your Connection
 
-After installation, restart your MCP client and look for "MCP Analytics" in the available tools. You should see tools like `discover_tools`, `tools_run`, `datasets_upload`, etc.
+After installation, restart your MCP client and look for "MCP Analytics" in the available tools. You should see tools like `create_analysis`, `discover_tools`, `datasets_upload`, etc.
 
 ```bash
 # Test the stdio proxy directly:
 MCP_ANALYTICS_API_KEY=mcp_your_key npx -y @mcp-analytics/mcp-analytics
-# Should output: "[mcp-analytics] Connected to https://api.mcpanalytics.ai. 19 tools available."
+# Should output a "[mcp-analytics] Connected to https://api.mcpanalytics.ai" line with the tool count
 ```
 
 ### Troubleshooting
@@ -468,14 +487,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-Copyright © 2025 PeopleDrivenAI LLC. All Rights Reserved.
+Copyright © 2026 PeopleDrivenAI LLC. All Rights Reserved.
 
 MCP Analytics is a product of PeopleDrivenAI LLC.
 
 This is commercial software. Use of the MCP Analytics service is subject to our:
 - [Terms of Service](https://mcpanalytics.ai/terms)
 - [Privacy Policy](https://mcpanalytics.ai/privacy)
-- [Acceptable Use Policy](https://mcpanalytics.ai/aup)
 
 ---
 
@@ -483,7 +501,7 @@ This is commercial software. Use of the MCP Analytics service is subject to our:
 
 **Ready to transform your data analysis workflow?**
 
-[**Get Started Free**](https://mcpanalytics.ai/signup) | [**Read Docs**](https://mcpanalytics.ai/docs) | [**View Demo**](https://mcpanalytics.ai/demo)
+[**Get Started Free**](https://mcpanalytics.ai/signup) | [**Read Docs**](https://mcpanalytics.ai/docs) | [**View Demo**](https://mcpanalytics.ai/demo.html)
 
 Built by [MCP Analytics](https://mcpanalytics.ai) | Powered by R & Python
 

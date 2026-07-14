@@ -5,23 +5,35 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
-## [Unreleased] — v2 rebuild in progress
+## v2 platform release — July 2026
 
-The platform is being actively rebuilt (codename **v2**). The live site at
-[mcpanalytics.ai](https://mcpanalytics.ai) runs behind a beta banner during
-this period — signup is open for testing, but some features are incomplete
-or unstable while the rewrite lands. The v2 work covers the discovery layer,
-module runtime, report rendering pipeline, and connector framework.
-[#22 — v2 rebuild: what's changing, what to expect](https://github.com/embeddedlayers/mcp-analytics/issues/22)
-tracks scope and progress. This section will be replaced with a concrete
-`[2.0.0]` entry when the rebuild ships.
+The v2 rebuild has shipped and [mcpanalytics.ai](https://mcpanalytics.ai) is
+out of beta. Rebuild scope and history:
+[#22 — v2 rebuild: what's changing, what to expect](https://github.com/embeddedlayers/mcp-analytics/issues/22).
+
+### Added
+- **Commissioned analysis pipeline** — `create_analysis` takes a plain-language
+  question, a dataset, and a depth tier; `build_status` tracks the build;
+  `run_analysis` re-runs any analysis you own on fresh data
+- **Four depth tiers** — Snapshot (instant read), JSON (computed answer as a
+  re-runnable tool), Brief (one-page report), Deck (full commissioned study)
+- **Report cards** — `report_cards`, `cards_list`, `cards_customize`,
+  `cards_reset` for displaying and customizing individual report cards
+- **Credit model** — 2,000 welcome credits on signup; builds are priced by
+  depth and billed only on success
+- **PDF export** — download any report as a formatted PDF with methodology
+  and citations ([#4](https://github.com/embeddedlayers/mcp-analytics/issues/4))
+
+### Changed
+- Account management moved to [account.mcpanalytics.ai](https://account.mcpanalytics.ai)
+- `tools_run` superseded by `run_analysis`
 
 ---
 
 ## [1.0.4] — 2026-03-28
 
 ### Added
-- **Module Request issue template** — request a custom analysis module directly from GitHub; our autonomous builder can deliver within days
+- **Module Request issue template** — request a custom analysis module directly from GitHub; our build pipeline can deliver within days
 - **Connector Request issue template** — request new data source integrations
 - **Public roadmap** — see what's planned in [ROADMAP.md](ROADMAP.md)
 - **Output datasets** — analysis results saved as reusable datasets for chaining analyses

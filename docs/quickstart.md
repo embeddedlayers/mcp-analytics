@@ -77,9 +77,9 @@ The AI will:
 3. Run the analysis
 4. Return an interactive HTML report with charts and insights
 
-## Free Tier
+## Free to Start
 
-The free tier includes 25 analyses per month — no credit card required. See [pricing](https://mcpanalytics.ai/pricing.html) for paid plans.
+Signup comes with 2,000 welcome credits — no credit card required — enough to commission your first analyses. Every analysis runs at a depth you choose: a fast **Snapshot**, a computed **JSON** answer, a one-page **Brief**, or a full **Deck** study you own and re-run forever. See [pricing](https://mcpanalytics.ai/pricing.html) and [how credits work](https://mcpanalytics.ai/how-credits-work.html).
 
 ## Try a Live Demo
 

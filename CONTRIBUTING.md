@@ -23,7 +23,7 @@ Open a [feature request](https://github.com/embeddedlayers/mcp-analytics/issues/
 
 ## Requesting a New Analysis Module
 
-MCP Analytics has an autonomous module builder that produces new validated analysis modules from a specification — usually within a day. If you have a specific analytical need, describe it in a feature request with:
+MCP Analytics has a module build pipeline that produces new validated analysis modules from a specification — usually within a day. If you have a specific analytical need, describe it in a feature request with:
 - The question you're trying to answer
 - What data you have (column names and types)
 - What output you'd expect

@@ -14,7 +14,7 @@
 
 MCP Analytics brings professional data science directly into AI assistants like Claude, Cursor, and VS Code. Upload a CSV or connect live data — ask a question in plain English — get an interactive report with charts and AI-written insights.
 
-- **70+ Analysis Modules** — regression, clustering, time series, hypothesis testing, customer analytics, ML
+- **Custom Analysis Creation** — regression, clustering, time series, hypothesis testing, customer analytics, ML — built to your data and question
 - **Live Connectors** — Google Analytics 4, Google Search Console, with more planned
 - **Natural Language Interface** — describe your question, we pick the right statistical method
 - **Interactive Reports** — shareable HTML reports with visualizations and plain-English interpretation
@@ -45,7 +45,7 @@ Our MCP server provides the full analytics suite through a single connection:
 }
 ```
 
-Sign up free at [app.mcpanalytics.ai](https://app.mcpanalytics.ai) — 2,000 credits, no credit card required.
+Sign up free at [account.mcpanalytics.ai](https://account.mcpanalytics.ai) — 2,000 welcome credits, no credit card required.
 
 ## Community
 
@@ -65,6 +65,6 @@ Sign up free at [app.mcpanalytics.ai](https://app.mcpanalytics.ai) — 2,000 cre
 
 **Ask a question. Upload your data. Get an interactive report.**
 
-[Get Started](https://app.mcpanalytics.ai) · [Sample Reports](https://mcpanalytics.ai/sample-reports.html) · [Documentation](https://mcpanalytics.ai/docs)
+[Get Started](https://account.mcpanalytics.ai) · [Sample Reports](https://mcpanalytics.ai/sample-reports.html) · [Documentation](https://mcpanalytics.ai/docs)
 
 </div>

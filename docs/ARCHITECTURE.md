@@ -4,7 +4,7 @@ This document describes how MCP Analytics works at a high level. It is written f
 
 ## How It Works
 
-MCP Analytics is a hosted MCP server. You connect your AI client (Claude Desktop, Cursor, or any MCP-compatible tool) to our server URL. When you ask a question, your AI assistant discovers the right analysis tool, uploads your data, runs the analysis, and returns an interactive HTML report — all through the MCP protocol.
+MCP Analytics is a hosted MCP server. You connect your AI client (Claude Desktop, Cursor, or any MCP-compatible tool) to our server URL. When you ask a question, your AI assistant uploads your data and commissions an analysis at the depth you choose (`create_analysis`) — a build pipeline of specialist agents scopes the method, writes validated R, runs it, and independently verifies the result before you see it. Analyses you already own (and pre-built cornerstone modules discovered via `discover_tools`) re-run directly on fresh data — all through the MCP protocol.
 
 ```
 Your AI Client (Claude / Cursor)
@@ -56,11 +56,11 @@ Analysis output is rendered into interactive HTML reports — charts, statistica
 
 ### Data Connectors
 
-Native connectors for Shopify, Stripe, WooCommerce, and eBay pull data directly via their APIs. CSV and JSON uploads are also supported. Connector credentials are encrypted with AES-256-GCM using per-connector keys stored in Azure Key Vault.
+Live connectors for Google Analytics 4 and Google Search Console pull data directly via their APIs (more planned). CSV and JSON uploads are also supported. Connector credentials are encrypted with AES-256-GCM using per-connector keys stored in Azure Key Vault.
 
 ## Authentication
 
-OAuth 2.0 with PKCE via Auth0. No API keys. On first connection, your MCP client initiates the OAuth flow and you authenticate once in a browser. The token is stored by your MCP client and refreshed automatically.
+Two options: an **API key** (from your [account settings](https://account.mcpanalytics.ai), used via the npx package or a custom header) or **OAuth 2.0 with PKCE** via Auth0 — on first connection your MCP client opens a browser for a one-time login, then stores and refreshes the token automatically.
 
 ## Data Privacy
 
@@ -85,5 +85,5 @@ OAuth 2.0 with PKCE via Auth0. No API keys. On first connection, your MCP client
 
 ---
 
-For API reference: [api.mcpanalytics.ai/docs](https://api.mcpanalytics.ai/docs)
+For docs: [mcpanalytics.ai/docs](https://mcpanalytics.ai/docs.html)
 For support: support@mcpanalytics.ai

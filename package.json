@@ -1,7 +1,7 @@
 {
   "name": "@mcp-analytics/mcp-analytics",
   "version": "1.0.0",
-  "description": "MCP client for adhoc analysis generation — bring data and a question, a team of specialist agents builds a custom analysis module you own. Citable, reproducible, rerunnable. Works in Claude, Cursor, and any MCP client. (Beta — v2 rebuild.)",
+  "description": "The statistical analyst in your AI chat — bring data and a question, a team of specialist agents builds a custom analysis you own. Citable, reproducible, rerunnable. Works in Claude, Cursor, and any MCP client.",
   "license": "MIT",
   "author": "MCP Analytics <support@mcpanalytics.ai>",
   "homepage": "https://mcpanalytics.ai",
