@@ -76,7 +76,7 @@ if (API_KEY) {
 
     remoteClient = new Client({
       name: "mcp-analytics-proxy",
-      version: "1.0.0",
+      version: "1.0.6",
     });
 
     await remoteClient.connect(transport);
@@ -110,7 +110,7 @@ if (API_KEY) {
 // ── Local stdio server ───────────────────────────────────────────────────────
 
 const server = new Server(
-  { name: "mcp-analytics", version: "1.0.0" },
+  { name: "mcp-analytics", version: "1.0.6" },
   { capabilities: { tools: {} } }
 );
 

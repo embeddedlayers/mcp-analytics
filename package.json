@@ -1,6 +1,6 @@
 {
   "name": "@mcp-analytics/mcp-analytics",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "The statistical analyst in your AI chat — bring data and a question, a team of specialist agents builds a custom analysis you own. Citable, reproducible, rerunnable. Works in Claude, Cursor, and any MCP client.",
   "license": "MIT",
   "author": "MCP Analytics <support@mcpanalytics.ai>",
