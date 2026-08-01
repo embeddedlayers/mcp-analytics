@@ -17,9 +17,12 @@ out of beta. Rebuild scope and history:
   `run_analysis` re-runs any analysis you own on fresh data
 - **Four depth tiers** — Snapshot (instant read), JSON (computed answer as a
   re-runnable tool), Brief (one-page report), Deck (full commissioned study)
-- **Report cards** — `report_cards`, `cards_list`, `cards_customize`,
-  `cards_reset` for displaying and customizing individual report cards
-- **Credit model** — 2,000 welcome credits on signup; builds are priced by
+- **Report cards** — `report_cards` for displaying individual report cards
+  inline in your AI client
+- **Library search** — `reports_list` searches your whole report library in
+  plain language; `ask_library` answers a question across every analysis you
+  own, with citations back to the source reports
+- **Credit model** — 500 welcome credits on signup; builds are priced by
   depth and billed only on success
 - **PDF export** — download any report as a formatted PDF with methodology
   and citations ([#4](https://github.com/embeddedlayers/mcp-analytics/issues/4))

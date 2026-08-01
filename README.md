@@ -65,7 +65,7 @@ More rigor outranks more charts: going deeper buys real statistical methods — 
 
 ### 1. Get an API Key
 
-Sign up free at [account.mcpanalytics.ai](https://account.mcpanalytics.ai), go to account settings, and copy your API key (starts with `mcp_`). You get **2,000 welcome credits** — no credit card required.
+Sign up free at [account.mcpanalytics.ai](https://account.mcpanalytics.ai), go to account settings, and copy your API key (starts with `mcp_`). You get **500 welcome credits** — no credit card required. That covers a one-page Brief, or a couple of instant Snapshots.
 
 ### 2. Connect
 
@@ -192,38 +192,38 @@ The platform provides a complete suite of MCP tools for end-to-end analytics:
 
 ### Analysis
 - **`create_analysis`** - Commission a new analysis from a plain-language question, at the tier you choose
-- **`build_status`** - Track a build: progress, queue position, report link
-- **`run_analysis`** - Re-run an analysis you own (or one discovered via `discover_tools`) on fresh data
-- **`modify_analysis`** - Request changes to an existing analysis
-- **`module_request`** - Request a new analysis capability
+- **`build_status`** - Track a build: stage progress, queue position, report link
+- **`run_analysis`** - Run an analysis you own (or one discovered via `discover_tools`) on fresh data
+- **`modify_analysis`** - Turn an existing analysis into a new version — reword the question, change the framing
 
 ### Discovery
-- **`discover_tools`** - Natural language tool discovery (semantic search)
-- **`tools_info`** - Get tool documentation and schema
-- **`tools_schema`** - Inspect column requirements for a tool
+- **`discover_tools`** - Browse what you can run: your commissioned analyses plus the prebuilt library
+- **`tools_schema`** - Get an analysis's parameter schema — always call this before `run_analysis`
 
 ### Data Management
 - **`datasets_upload`** - Secure data upload with encryption
-- **`datasets_list`** - List your uploaded datasets
-- **`datasets_read`** - Preview dataset contents
-- **`datasets_download`** - Download a dataset
-- **`datasets_update`** - Update dataset metadata
+- **`datasets_list`** - List and search your uploaded datasets
 
 ### Connectors
 - **`connectors_list`** - List available data source connections
 - **`connectors_query`** - Pull live data from a connected source
 
 ### Reporting & Insights
-- **`reports_view`** - Open an interactive HTML report
-- **`reports_list`** - List your reports
-- **`reports_search`** - Semantic search across past analyses
-- **`report_cards`** / **`cards_list`** / **`cards_customize`** / **`cards_reset`** - Display and customize individual report cards
-- **`agent_advisor`** - Conversational AI that guides analysis and interprets results
+- **`reports_view`** - Get a shareable browser link for a report
+- **`reports_list`** - Your report library — every analysis delivered, searchable in plain language
+- **`report_cards`** - Browse a delivered report's individual cards (charts, tables, insights)
+- **`ask_library`** - Ask one question across *all* your delivered analyses; get a synthesized answer with citations back to each source report
+- **`agent_advisor`** - AI help desk — which analysis fits your question, and how to read the result
 
 ### Platform Tools
 - **`billing`** - Usage and credit management
-- **`account_link`** - Link your MCP client to your account
-- **`about`** - Platform information and status
+- **`account_link`** - Link to the right account page for anything not doable in chat
+- **`about`** - Platform documentation and info — how it works, tiers, usage
+
+> Browse the catalog yourself, without an account:
+> `curl -X POST https://api.mcpanalytics.ai/mcp/discover -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"tools/list","id":1,"params":{}}'`
+> Discovery returns the 15 tools that work pre-auth; `billing`, `connectors_list`,
+> and `connectors_query` appear once you connect with a key or via OAuth.
 
 ## Features
 

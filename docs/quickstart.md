@@ -79,7 +79,7 @@ The AI will:
 
 ## Free to Start
 
-Signup comes with 2,000 welcome credits — no credit card required — enough to commission your first analyses. Every analysis runs at a depth you choose: a fast **Snapshot**, a computed **JSON** answer, a one-page **Brief**, or a full **Deck** study you own and re-run forever. See [pricing](https://mcpanalytics.ai/pricing.html) and [how credits work](https://mcpanalytics.ai/how-credits-work.html).
+Signup comes with 500 welcome credits — no credit card required — enough to commission your first Brief, or a couple of instant Snapshots. Every analysis runs at a depth you choose: a fast **Snapshot**, a computed **JSON** answer, a one-page **Brief**, or a full **Deck** study you own and re-run forever. See [pricing](https://mcpanalytics.ai/pricing.html) and [how credits work](https://mcpanalytics.ai/how-credits-work.html).
 
 ## Try a Live Demo
 

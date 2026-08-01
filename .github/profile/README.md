@@ -45,7 +45,7 @@ Our MCP server provides the full analytics suite through a single connection:
 }
 ```
 
-Sign up free at [account.mcpanalytics.ai](https://account.mcpanalytics.ai) — 2,000 welcome credits, no credit card required.
+Sign up free at [account.mcpanalytics.ai](https://account.mcpanalytics.ai) — 500 welcome credits, no credit card required.
 
 ## Community
 

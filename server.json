@@ -31,7 +31,7 @@
     "time-series",
     "machine-learning",
     "snapshot",
-    "atlas",
+    "deck",
     "oauth2",
     "encrypted"
   ],
@@ -80,9 +80,9 @@
       "code": "create_analysis(fuzzy_request='does ad spend drive sales?', dataset_ref='uuid://...', tier='snapshot')"
     },
     {
-      "title": "Commission a deep analysis (Atlas)",
-      "description": "A durable, re-runnable analysis module built for your question (~1 hour, never billed on failure)",
-      "code": "create_analysis(fuzzy_request='what drives churn?', dataset_ref='uuid://...', tier='atlas') then build_status(pipeline_id)"
+      "title": "Commission a deep analysis (Deck)",
+      "description": "A durable, re-runnable analysis module built for your question (30-45 min, never billed on failure)",
+      "code": "create_analysis(fuzzy_request='what drives churn?', dataset_ref='uuid://...', tier='deck') then build_status(pipeline_id)"
     },
     {
       "title": "Re-run an analysis on fresh data",
