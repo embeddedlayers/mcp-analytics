@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+# Pre-push gate: this repo's public claims must match the live platform.
+#
+# WHY A HOOK AND NOT (ONLY) CI — LAT-1878/LAT-1883:
+#   .github/workflows/docs-drift.yml exists and is correct, but GitHub Actions
+#   cannot run in this org at all: every job returns "the job was not started
+#   because your account is locked due to a billing issue". 100/100 runs on
+#   mcpanalytics-operations are startup_failure; the last successful run on any
+#   org repo was 2026-06-20. A gate that cannot execute is not a gate.
+#   This hook works today, locally, with no billing dependency. The workflow
+#   stays for when billing is restored — belt and braces, not either/or.
+#
+# WHY IT IS SAFE TO GATE ON:
+#   One HTTPS GET to a public, cached endpoint and a regex over five markdown
+#   files. ~1s. It needs NETWORK, which the api-mcp-prod invariant hook
+#   deliberately does not — so unreachable (exit 3) WARNS and lets the push
+#   through, while actual drift (exit 1) blocks. Blocking a push made on a
+#   plane would just teach everyone to type --no-verify, and then the gate is
+#   gone for the case that matters.
+#
+# INSTALL:  ./scripts/hooks/install.sh
+# BYPASS:   git push --no-verify   (consciously, not reflexively)
+
+set -uo pipefail
+REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$REPO" || exit 0
+
+# Nothing to check on an old branch / fresh clone that predates the script.
+[ -f scripts/check-docs-drift.py ] || exit 0
+
+PY="$(command -v python3 || true)"
+if [ -z "$PY" ]; then
+    echo "pre-push: python3 not found — skipping docs-drift check" >&2
+    exit 0
+fi
+
+echo "pre-push: docs drift vs live platform…"
+OUT="$("$PY" scripts/check-docs-drift.py 2>&1)"
+RC=$?
+
+case "$RC" in
+    0)
+        echo "pre-push: docs drift OK"
+        ;;
+    3)
+        # Could not reach the platform. Warn, do not block — see header.
+        echo "pre-push: ⚠️  could not verify docs against the platform (offline?)" >&2
+        echo "$OUT" | sed 's/^/  /' >&2
+        echo "pre-push: allowing push — re-run manually when back online:" >&2
+        echo "            python3 scripts/check-docs-drift.py" >&2
+        ;;
+    *)
+        echo "$OUT" | sed 's/^/  /' >&2
+        echo >&2
+        echo "pre-push: BLOCKED — this repo's public docs disagree with the live" >&2
+        echo "          platform. These files are read by prospects deciding" >&2
+        echo "          whether we are real; shipping a wrong number here has" >&2
+        echo "          already happened twice (LAT-1680, LAT-1876)." >&2
+        echo "          Fix the docs, or 'git push --no-verify' if you are sure." >&2
+        exit 1
+        ;;
+esac
+
+exit 0

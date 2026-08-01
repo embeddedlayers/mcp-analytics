@@ -39,7 +39,13 @@ Usage:
 
 Exit codes:
     0  docs agree with the platform
-    1  drift found, or nothing found to compare, or the platform was unreachable
+    1  DRIFT — a doc claim disagrees with the platform, or nothing was found to
+       compare (the check has gone blind). Both are real problems.
+    3  COULD NOT VERIFY — the platform was unreachable. Distinct from 1 on
+       purpose: CI treats any non-zero as failure (a green check on an
+       unreachable API would be a lie), but the pre-push hook lets 3 through
+       with a warning. A gate that blocks every push made on a train gets
+       disabled with --no-verify, and then it is not a gate at all.
 """
 
 from __future__ import annotations
@@ -92,10 +98,12 @@ def fetch_platform(api_base: str) -> dict:
             return json.load(r)
     except (urllib.error.URLError, urllib.error.HTTPError,
             TimeoutError, OSError, ValueError) as e:
-        print(f"FATAL: could not read {url}: {e}", file=sys.stderr)
+        print(f"COULD NOT VERIFY: {url}: {e}", file=sys.stderr)
         print("       Refusing to pass — an unreachable platform is not "
               "evidence that the docs are correct.", file=sys.stderr)
-        raise SystemExit(1)
+        print("       (exit 3, distinct from drift; see the module docstring)",
+              file=sys.stderr)
+        raise SystemExit(3)
 
 
 def main() -> int:
