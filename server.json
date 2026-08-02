@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "ai.mcpanalytics/analytics",
-  "description": "The statistical analyst in your AI chat \u2014 validated, citable, re-runnable analysis of your data.",
-  "version": "1.0.6",
+  "description": "The statistical analyst in your AI chat — validated, citable, re-runnable analysis of your data.",
+  "version": "1.0.7",
   "author": {
     "name": "MCP Analytics",
     "email": "support@mcpanalytics.ai",
@@ -38,34 +38,11 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://api.mcpanalytics.ai/mcp/api-key",
-      "authentication": {
-        "type": "api-key",
-        "header": "X-API-Key"
-      }
+      "url": "https://api.mcpanalytics.ai/auth0"
     },
     {
       "type": "streamable-http",
-      "url": "https://api.mcpanalytics.ai/auth0",
-      "authentication": {
-        "type": "oauth2",
-        "authorizationUrl": "https://api.mcpanalytics.ai/oauth2/authorize",
-        "tokenUrl": "https://api.mcpanalytics.ai/oauth2/token",
-        "scopes": [
-          "openid",
-          "profile",
-          "email",
-          "execute:tools"
-        ],
-        "pkce": true
-      }
-    },
-    {
-      "type": "streamable-http",
-      "url": "https://api.mcpanalytics.ai/mcp/discover",
-      "authentication": {
-        "type": "none"
-      }
+      "url": "https://api.mcpanalytics.ai/mcp/api-key"
     }
   ],
   "capabilities": {
@@ -86,14 +63,14 @@
     },
     {
       "title": "Re-run an analysis on fresh data",
-      "description": "Your commissioned modules re-run anytime \u2014 including on live connector data",
+      "description": "Your commissioned modules re-run anytime — including on live connector data",
       "code": "run_analysis(tool_name='<your module>', taskList={inputs: {dataset: 'connector://mcpanalytics_ga4/report?...'}})"
     }
   ],
   "documentation": {
     "quickstart": "https://mcpanalytics.ai/docs/quickstart",
-    "tools": "https://mcpanalytics.ai/tools",
-    "api": "https://api.mcpanalytics.ai/docs"
+    "docs": "https://mcpanalytics.ai/docs",
+    "sample_reports": "https://mcpanalytics.ai/analysis"
   },
   "support": {
     "issues": "support@mcpanalytics.ai",
