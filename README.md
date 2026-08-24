@@ -6,7 +6,7 @@
 
 [Sample Reports →](https://mcpanalytics.ai/case-studies) • [Try Demo →](https://mcpanalytics.ai/demo) • [Pricing →](https://mcpanalytics.ai/pricing)
 
-**Try it before installing anything.** The [free tools](https://mcpanalytics.ai/free/) run in the browser on a CSV you upload — no account, no key, no MCP client. Each one is a real analysis with the method written out: [A/B test](https://mcpanalytics.ai/free/standard_ab_test), [group comparison](https://mcpanalytics.ai/free/standard_group_comparison), [survival](https://mcpanalytics.ai/free/standard_survival), [agreement (ICC)](https://mcpanalytics.ai/free/standard_icc), [paired proportions (McNemar)](https://mcpanalytics.ai/free/standard_mcnemar).
+**Try it before installing anything.** The [free tools](https://mcpanalytics.ai/free/) run in the browser on a CSV you upload — no account, no key, no MCP client. Each one is a real analysis with the method written out: [PCA](https://mcpanalytics.ai/free/standard_pca), [correlation](https://mcpanalytics.ai/free/standard_correlation), [forecasting](https://mcpanalytics.ai/free/standard_forecasting), [RFM segmentation](https://mcpanalytics.ai/free/standard_rfm), [regression (GLM)](https://mcpanalytics.ai/free/standard_glm).
 
 <div align="center">
 
