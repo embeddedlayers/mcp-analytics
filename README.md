@@ -4,7 +4,9 @@
 
 > **This is the public listing and documentation repository.** Issues, feature requests, and examples live here. The API server code is maintained separately.
 
-[Sample Reports →](https://mcpanalytics.ai/sample-reports.html) • [Try Demo →](https://mcpanalytics.ai/demo.html) • [Pricing →](https://mcpanalytics.ai/pricing.html)
+[Sample Reports →](https://mcpanalytics.ai/case-studies) • [Try Demo →](https://mcpanalytics.ai/demo) • [Pricing →](https://mcpanalytics.ai/pricing)
+
+**Try it before installing anything.** The [free tools](https://mcpanalytics.ai/free/) run in the browser on a CSV you upload — no account, no key, no MCP client. Each one is a real analysis with the method written out: [A/B test](https://mcpanalytics.ai/free/standard_ab_test), [group comparison](https://mcpanalytics.ai/free/standard_group_comparison), [survival](https://mcpanalytics.ai/free/standard_survival), [agreement (ICC)](https://mcpanalytics.ai/free/standard_icc), [paired proportions (McNemar)](https://mcpanalytics.ai/free/standard_mcnemar).
 
 <div align="center">
 
@@ -49,7 +51,7 @@ Every analysis runs through the same validated pipeline — you choose how far i
 | **Brief** | The computed answer, presented — chart, key figures, and method on a single shareable page | ~7 min |
 | **Deck** | The full study — a complete statistical report built to your brief and independently verified; a durable module you own and re-run forever | 30–45 min |
 
-More rigor outranks more charts: going deeper buys real statistical methods — hypothesis tests, regression, diagnostics — not just more cards. You pay for depth, and only if the build succeeds. [How the tiers work →](https://mcpanalytics.ai/tiers.html)
+More rigor outranks more charts: going deeper buys real statistical methods — hypothesis tests, regression, diagnostics — not just more cards. You pay for depth, and only if the build succeeds. [How the tiers work →](https://mcpanalytics.ai/tiers)
 
 ### Why MCP Analytics
 
@@ -422,7 +424,7 @@ flowchart TB
 - [**Architecture**](docs/ARCHITECTURE.md) - How the platform works
 - [**Connectors**](docs/connectors.md) - GA4, GSC, and CSV data sources
 - [**Pricing**](docs/pricing.md) - Credits, tiers, and plans
-- [**How Credits Work**](https://mcpanalytics.ai/how-credits-work.html) - The credit model explained
+- [**How Credits Work**](https://mcpanalytics.ai/how-credits-work) - The credit model explained
 - [**Security**](SECURITY.md) - Security & compliance details
 - [**Tutorials**](https://mcpanalytics.ai/tutorials) - Step-by-step guides
 
@@ -445,7 +447,7 @@ flowchart TB
 | **Visualizations** | ✅ Interactive | ✅ Dashboards | ❌ | ❌ |
 | **Shareable Reports** | ✅ | ❌ | ❌ | ❌ |
 
-[**Detailed comparison →**](https://mcpanalytics.ai/compare.html)
+[**Detailed comparison →**](https://mcpanalytics.ai/compare)
 
 ## About MCP Analytics
 
@@ -501,7 +503,7 @@ This is commercial software. Use of the MCP Analytics service is subject to our:
 
 **Ready to transform your data analysis workflow?**
 
-[**Get Started Free**](https://mcpanalytics.ai/signup) | [**Read Docs**](https://mcpanalytics.ai/docs) | [**View Demo**](https://mcpanalytics.ai/demo.html)
+[**Get Started Free**](https://mcpanalytics.ai/signup) | [**Read Docs**](https://mcpanalytics.ai/docs) | [**View Demo**](https://mcpanalytics.ai/demo)
 
 Built by [MCP Analytics](https://mcpanalytics.ai) | Powered by R & Python
 
