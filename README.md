@@ -42,7 +42,7 @@ Connect data however it lives: CSV upload, public URL, or live OAuth connectors 
 
 ### Choose Your Depth — Four Tiers
 
-Every analysis runs through the same validated pipeline — you choose how far it goes:
+Every analysis runs through the same pipeline — you choose how far it goes:
 
 | Tier | What you get | Time |
 |------|-------------|------|
@@ -57,7 +57,7 @@ More rigor outranks more charts: going deeper buys real statistical methods — 
 
 - **Citable** — APA / MLA / Chicago / BibTeX in one click, ready for papers, decks, and regulatory filings
 - **Sourceable** — R source code embedded in every report; a skeptical reader can run it and get the same answer
-- **Reproducible** — fixed seeds, Docker isolation, validated methods; same input → same output, forever
+- **Reproducible** — fixed seeds, Docker isolation, named methods; same input → same output, forever
 - **Yours** — every commissioned module is private to your account; rerun on fresh data, query across your portfolio
 - **MCP-native** — query the library from Claude, Cursor, Windsurf, or any MCP client
 - **Secure** — OAuth2, encryption at rest, isolated container processing per analysis
@@ -183,7 +183,7 @@ Restart your MCP client. Ask:
 User: "What drives our sales growth?"
 MCP Analytics:
   → Scopes the right statistical method for your data's shape
-  → Writes validated R in an isolated container — deterministic, fixed seeds
+  → Writes R in an isolated container — deterministic, fixed seeds
   → Runs it, then independently verifies numbers and narrative
   → Returns a citable, interactive report you own
 ```
@@ -451,7 +451,7 @@ flowchart TB
 
 ## About MCP Analytics
 
-MCP Analytics is built by data scientists and engineers passionate about making advanced statistical analysis accessible through AI assistants. The platform runs validated, deterministic analysis modules — the same data and tool produce the same result every time, unlike LLM code generation.
+MCP Analytics is built by data scientists and engineers passionate about making advanced statistical analysis accessible through AI assistants. The platform runs deterministic analysis modules — the same data and tool produce the same result every time, unlike LLM code generation.
 
 ## Testing & Support
 

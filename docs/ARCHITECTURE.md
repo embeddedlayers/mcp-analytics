@@ -4,7 +4,7 @@ This document describes how MCP Analytics works at a high level. It is written f
 
 ## How It Works
 
-MCP Analytics is a hosted MCP server. You connect your AI client (Claude Desktop, Cursor, or any MCP-compatible tool) to our server URL. When you ask a question, your AI assistant uploads your data and commissions an analysis at the depth you choose (`create_analysis`) — a build pipeline of specialist agents scopes the method, writes validated R, runs it, and independently verifies the result before you see it. Analyses you already own (and pre-built cornerstone modules discovered via `discover_tools`) re-run directly on fresh data — all through the MCP protocol.
+MCP Analytics is a hosted MCP server. You connect your AI client (Claude Desktop, Cursor, or any MCP-compatible tool) to our server URL. When you ask a question, your AI assistant uploads your data and commissions an analysis at the depth you choose (`create_analysis`) — a build pipeline of specialist agents scopes the method, writes the R, runs it, and independently verifies the result before you see it. Analyses you already own (and pre-built cornerstone modules discovered via `discover_tools`) re-run directly on fresh data — all through the MCP protocol.
 
 ```
 Your AI Client (Claude / Cursor)
@@ -77,7 +77,7 @@ Two options: an **API key** (from your [account settings](https://account.mcpana
 | Database | PostgreSQL (Azure managed) |
 | Vector search | pgvector |
 | Auth | Auth0 (OAuth 2.0) |
-| Analysis runtime | R (validated statistical modules) |
+| Analysis runtime | R (statistical modules) |
 | Container runtime | Docker |
 | CDN / DDoS | Cloudflare |
 | Secrets | Azure Key Vault |
