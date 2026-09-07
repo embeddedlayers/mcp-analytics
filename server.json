@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "ai.mcpanalytics/analytics",
-  "description": "The statistical analyst in your AI chat — validated, citable, re-runnable analysis of your data.",
+  "description": "The statistical analyst in your AI chat. Bring data and a question, own a citable, re-runnable analysis with its method named.",
   "version": "1.0.7",
   "author": {
     "name": "MCP Analytics",
@@ -63,7 +63,7 @@
     },
     {
       "title": "Re-run an analysis on fresh data",
-      "description": "Your commissioned modules re-run anytime — including on live connector data",
+      "description": "Your commissioned modules re-run anytime, including on live connector data",
       "code": "run_analysis(tool_name='<your module>', taskList={inputs: {dataset: 'connector://mcpanalytics_ga4/report?...'}})"
     }
   ],

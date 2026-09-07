@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        MCP Analytics has an autonomous module builder that produces validated analysis modules from a specification. Well-described requests often get built and deployed within days.
+        MCP Analytics has a module build pipeline that produces analysis modules from a specification. Well-described requests often get built and deployed within days.
 
         The more specific you are about your data and the question you're trying to answer, the faster we can build it.
   - type: textarea
