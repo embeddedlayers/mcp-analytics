@@ -22,8 +22,8 @@ out of beta. Rebuild scope and history:
 - **Library search** — `reports_list` searches your whole report library in
   plain language; `ask_library` answers a question across every analysis you
   own, with citations back to the source reports
-- **Credit model** — 500 welcome credits on signup; builds are priced by
-  depth and billed only on success
+- **Credit model** — 9,000 welcome credits on signup; builds are billed only
+  on success
 - **PDF export** — download any report as a formatted PDF with methodology
   and citations ([#4](https://github.com/embeddedlayers/mcp-analytics/issues/4))
 

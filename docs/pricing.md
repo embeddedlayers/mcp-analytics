@@ -4,7 +4,7 @@ Full, current pricing at [mcpanalytics.ai/pricing](https://mcpanalytics.ai/prici
 
 ## The Credit Model
 
-Everything runs on credits. You get **500 welcome credits on signup** — no credit card required — enough to commission your first Brief, or a couple of instant Snapshots, and see a real report.
+Everything runs on credits. You get **9,000 welcome credits on signup**, no credit card required, enough to commission about seven full analyses at any depth and see real reports.
 
 - **Re-running an analysis you own** on fresh data costs **half its build price** — you already paid to build it.
 - A **new custom analysis** is priced by depth — from a fast Snapshot up to a full Deck study.

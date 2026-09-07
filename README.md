@@ -67,7 +67,7 @@ More rigor outranks more charts: going deeper buys real statistical methods — 
 
 ### 1. Get an API Key
 
-Sign up free at [account.mcpanalytics.ai](https://account.mcpanalytics.ai), go to account settings, and copy your API key (starts with `mcp_`). You get **500 welcome credits** — no credit card required. That covers a one-page Brief, or a couple of instant Snapshots.
+Sign up free at [account.mcpanalytics.ai](https://account.mcpanalytics.ai), go to account settings, and copy your API key (starts with `mcp_`). You get **9,000 welcome credits**, no credit card required. That covers about seven full analyses at any depth, plus re-runs.
 
 ### 2. Connect
 
