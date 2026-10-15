@@ -1,79 +1,26 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.mcpanalytics/analytics",
-  "description": "The statistical analyst in your AI chat. Bring data and a question, own a citable, re-runnable analysis with its method named.",
-  "version": "1.0.7",
-  "author": {
-    "name": "MCP Analytics",
-    "email": "support@mcpanalytics.ai",
-    "url": "https://mcpanalytics.ai"
-  },
-  "license": "MIT",
-  "homepage": "https://mcpanalytics.ai",
+  "title": "MCP Analytics",
+  "description": "A statistical analyst in your AI chat: bring data and a question, get a citable, re-runnable report.",
+  "websiteUrl": "https://mcpanalytics.ai",
   "repository": {
     "url": "https://github.com/embeddedlayers/mcp-analytics",
     "source": "github"
   },
-  "categories": [
-    "analytics",
-    "data-science",
-    "statistics",
-    "machine-learning"
-  ],
-  "keywords": [
-    "statistics",
-    "data-analysis",
-    "reports",
-    "citable",
-    "reproducible",
-    "regression",
-    "clustering",
-    "time-series",
-    "machine-learning",
-    "snapshot",
-    "deck",
-    "oauth2",
-    "encrypted"
-  ],
+  "version": "1.0.8",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://api.mcpanalytics.ai/auth0"
-    },
-    {
-      "type": "streamable-http",
-      "url": "https://api.mcpanalytics.ai/mcp/api-key"
+      "url": "https://api.mcpanalytics.ai/mcp/api-key",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Your MCP Analytics API key, from https://account.mcpanalytics.ai",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
     }
-  ],
-  "capabilities": {
-    "tools": true,
-    "resources": true,
-    "prompts": true
-  },
-  "examples": [
-    {
-      "title": "Instant Snapshot report",
-      "description": "Commission an instant automated analysis of your data",
-      "code": "create_analysis(fuzzy_request='does ad spend drive sales?', dataset_ref='uuid://...', tier='snapshot')"
-    },
-    {
-      "title": "Commission a deep analysis (Deck)",
-      "description": "A durable, re-runnable analysis module built for your question (30-45 min, never billed on failure)",
-      "code": "create_analysis(fuzzy_request='what drives churn?', dataset_ref='uuid://...', tier='deck') then build_status(pipeline_id)"
-    },
-    {
-      "title": "Re-run an analysis on fresh data",
-      "description": "Your commissioned modules re-run anytime, including on live connector data",
-      "code": "run_analysis(tool_name='<your module>', taskList={inputs: {dataset: 'connector://mcpanalytics_ga4/report?...'}})"
-    }
-  ],
-  "documentation": {
-    "quickstart": "https://mcpanalytics.ai/docs/quickstart",
-    "docs": "https://mcpanalytics.ai/docs",
-    "sample_reports": "https://mcpanalytics.ai/analysis"
-  },
-  "support": {
-    "issues": "support@mcpanalytics.ai",
-    "email": "support@mcpanalytics.ai"
-  }
+  ]
 }
