@@ -17,7 +17,7 @@ AI:  I'll upload your data and run Prophet time series decomposition.
      Here's what I found:
 
      📈 Forecast (next 90 days)
-     • Predicted total: $487,000 (95% CI: $412,000 – $562,000)
+     • Predicted total: $487,000 (95% range $412,000 to $562,000)
      • Trend: +2.1% monthly growth continuing
      • Next peak: mid-April (Easter seasonal effect)
 
