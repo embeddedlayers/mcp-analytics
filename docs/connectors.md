@@ -36,7 +36,7 @@ connector://mcpanalytics_gsc/stream?site_url=sc-domain:yourdomain.com&dimensions
 - Page-level search performance
 - Seasonal query trends
 
-**Setup:** Your GSC property must be verified and linked in your [account settings](https://account.mcpanalytics.ai).
+**Setup:** Your GSC property must be set up in Google Search Console and linked in your [account settings](https://account.mcpanalytics.ai).
 
 ---
 
