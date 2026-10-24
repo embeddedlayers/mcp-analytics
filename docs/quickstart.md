@@ -1,8 +1,8 @@
-# Quick Start — MCP Analytics
+# Quick Start: MCP Analytics
 
 Get running in under a minute.
 
-## Step 1 — Install in Your AI Client
+## Step 1: Install in Your AI Client
 
 ### Claude Desktop
 
@@ -51,11 +51,11 @@ Add to `~/.continue/config.json`:
 }
 ```
 
-## Step 2 — Sign In
+## Step 2: Sign In
 
-On first use, your AI client will open a browser window for OAuth sign-in. Create a free account at [mcpanalytics.ai](https://mcpanalytics.ai) or sign in if you already have one. This is a one-time setup — your client stores the token and refreshes it automatically.
+On first use, your AI client will open a browser window for OAuth sign-in. Create a free account at [mcpanalytics.ai](https://mcpanalytics.ai) or sign in if you already have one. This is a one-time setup, your client stores the token and refreshes it automatically.
 
-## Step 3 — Start Analyzing
+## Step 3: Start Analyzing
 
 Once connected, just ask your AI assistant:
 

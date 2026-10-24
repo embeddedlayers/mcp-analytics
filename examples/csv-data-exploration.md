@@ -2,7 +2,7 @@
 
 **Module:** [`general__generic__csv__auto_profiler`](https://mcpanalytics.ai/free/general__generic__csv__auto_profiler)
 
-Upload any CSV and get an instant profile — distributions, missing values, correlations, outliers, and summary statistics. No setup, no column mapping, no configuration. Just upload and ask.
+Upload any CSV and get an instant profile, distributions, missing values, correlations, outliers, and summary statistics. No setup, no column mapping, no configuration. Just upload and ask.
 
 ## The Conversation
 
@@ -21,8 +21,8 @@ AI:  I'll upload your file and run the auto profiler.
      • 2.1% missing values (concentrated in "region" column)
 
      📈 Key Findings
-     • "revenue" is right-skewed (median $142, mean $287 — outliers pulling mean up)
-     • "signup_date" shows a growth trend — 3x more signups in Q4 vs Q1
+     • "revenue" is right-skewed (median $142, mean $287, outliers pulling mean up)
+     • "signup_date" shows a growth trend, 3x more signups in Q4 vs Q1
      • Strong correlation between "page_views" and "conversion" (r = 0.72)
      • 4 outlier rows with revenue > $5,000 (worth investigating)
 
@@ -50,7 +50,7 @@ AI:  I'll upload your file and run the auto profiler.
 Upload any CSV to MCP Analytics and ask:
 
 ```
-"Profile this dataset — show me distributions, missing values, and correlations."
+"Profile this dataset, show me distributions, missing values, and correlations."
 ```
 
 [View sample report →](https://mcpanalytics.ai/free/general__generic__csv__auto_profiler)

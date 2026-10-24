@@ -22,7 +22,7 @@ AI:  I'll upload your subscription data and run churn prediction.
      • 142 subscribers flagged for immediate intervention
 
      🔑 Top Churn Drivers
-     1. Days since last login (most predictive — inactive users churn 4x more)
+     1. Days since last login (most predictive, inactive users churn 4x more)
      2. Support ticket count (3+ tickets = 2.8x churn risk)
      3. Plan type (monthly plans churn 3x more than annual)
      4. Usage decline (>50% drop in last 30 days = high risk signal)

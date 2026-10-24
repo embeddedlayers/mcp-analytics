@@ -19,13 +19,13 @@ MCP Analytics processes financial data (Shopify orders, Stripe payments). We tre
 
 ## Supported Versions
 
-MCP Analytics is a hosted service — all users automatically run the latest version. There are no self-hosted editions to patch.
+MCP Analytics is a hosted service, all users automatically run the latest version. There are no self-hosted editions to patch.
 
 ## Security Measures
 
 ### Authentication
 - OAuth 2.0 with PKCE via Auth0
-- No API keys — authentication is entirely OAuth-based
+- No API keys, authentication is entirely OAuth-based
 - Scoped permissions: `execute:tools`, `openid`, `profile`, `email`
 - Token refresh handled automatically by the MCP client
 
@@ -48,7 +48,7 @@ MCP Analytics is a hosted service — all users automatically run the latest ver
 
 ## Best Practices for Users
 
-**Credentials**: Never paste raw API tokens or passwords into your AI chat. Use the connector setup flow in your account — credentials are encrypted before storage.
+**Credentials**: Never paste raw API tokens or passwords into your AI chat. Use the connector setup flow in your account, credentials are encrypted before storage.
 
 **Data**: Anonymize PII before uploading datasets when possible. Uploaded data is processed ephemerally and not retained, but minimizing sensitive data in transit is good practice.
 

@@ -1,5 +1,5 @@
 name: Connector Request
-description: Request a new data connector — connect your tools directly without CSV exports
+description: Request a new data connector, connect your tools directly without CSV exports
 title: "[Connector]: "
 labels: ["connector-request", "enhancement"]
 body:
@@ -40,4 +40,4 @@ body:
     id: context
     attributes:
       label: Additional context
-      description: Anything else — API docs, data volume, specific metrics you need?
+      description: Anything else, API docs, data volume, specific metrics you need?

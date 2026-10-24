@@ -2,7 +2,7 @@
 
 **Module:** [`demo__advertising__marketing_spend__linear_regression`](https://mcpanalytics.ai/free/demo__advertising__marketing_spend__linear_regression)
 
-Upload data with an outcome variable and predictors. Get coefficients, significance tests, model fit, and predictions — find out which factors actually drive your results.
+Upload data with an outcome variable and predictors. Get coefficients, significance tests, model fit, and predictions, find out which factors actually drive your results.
 
 ## The Conversation
 
@@ -16,7 +16,7 @@ AI:  I'll upload your data and run linear regression.
 
      Here's what I found:
 
-     📊 Model Results (R² = 0.78 — explains 78% of sales variance)
+     📊 Model Results (R² = 0.78, explains 78% of sales variance)
 
      • TV Advertising: $3.20 return per $1 spent (p < 0.001, significant)
      • Digital Marketing: $2.80 return per $1 spent (p < 0.001, significant)
@@ -24,7 +24,7 @@ AI:  I'll upload your data and run linear regression.
 
      💡 Recommendation
      TV and digital are your strongest channels. Print isn't statistically
-     significant — the apparent return could be random noise. Consider
+     significant, the apparent return could be random noise. Consider
      reallocating print budget to TV or digital.
 
      [View full interactive report →]

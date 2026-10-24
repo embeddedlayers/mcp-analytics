@@ -2,7 +2,7 @@
 
 **Module:** [`general__generic__timeseries__prophet_decomposition`](https://mcpanalytics.ai/free/general__generic__timeseries__prophet_decomposition)
 
-Upload any time series data — revenue, traffic, inventory, sensor readings — and get a forecast with trend decomposition, seasonality detection, and confidence intervals.
+Upload any time series data, revenue, traffic, inventory, sensor readings, and get a forecast with trend decomposition, seasonality detection, and confidence intervals.
 
 ## The Conversation
 

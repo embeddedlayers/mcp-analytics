@@ -1,6 +1,6 @@
 {
   "name": "@mcp-analytics/mcp-analytics",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "A statistical analyst in your AI chat: bring a dataset and a question, get a citable, re-runnable report.",
   "license": "MIT",
   "author": "MCP Analytics <support@mcpanalytics.ai>",

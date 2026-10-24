@@ -1,5 +1,5 @@
 name: Module Request
-description: Request a new analysis module — we can often build and deploy it within days
+description: Request a new analysis module, we can often build and deploy it within days
 title: "[Module]: "
 labels: ["module-request", "enhancement"]
 body:
@@ -21,7 +21,7 @@ body:
     id: data
     attributes:
       label: What does your data look like?
-      description: Describe your dataset — column names, data types, approximate row count. A sample row helps a lot.
+      description: Describe your dataset, column names, data types, approximate row count. A sample row helps a lot.
       placeholder: |
         Columns: customer_id, signup_date, last_login, plan_type, monthly_spend, support_tickets, churned (yes/no)
         ~5,000 rows, CSV export from our billing system
@@ -54,9 +54,9 @@ body:
     attributes:
       label: How soon do you need this?
       options:
-        - No rush — whenever it's ready
+        - No rush, whenever it's ready
         - Within a week would be great
-        - Urgent — blocking my work
+        - Urgent, blocking my work
     validations:
       required: true
   - type: textarea

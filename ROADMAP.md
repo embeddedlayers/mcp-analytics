@@ -10,7 +10,7 @@ Last updated: **July 2026**
 
 ## Status: v2 is live
 
-The v2 rebuild has shipped. The platform now runs the full commissioned-analysis pipeline with four depth tiers — **Snapshot** (instant read), **JSON** (computed answer as a re-runnable tool), **Brief** (one-page report), and **Deck** (full commissioned study you own). Rebuild history: [#22](https://github.com/embeddedlayers/mcp-analytics/issues/22).
+The v2 rebuild has shipped. The platform now runs the full commissioned-analysis pipeline with four depth tiers, **Snapshot** (instant read), **JSON** (computed answer as a re-runnable tool), **Brief** (one-page report), and **Deck** (full commissioned study you own). Rebuild history: [#22](https://github.com/embeddedlayers/mcp-analytics/issues/22).
 
 ---
 
@@ -19,41 +19,41 @@ The v2 rebuild has shipped. The platform now runs the full commissioned-analysis
 These are in progress or shipping soon.
 
 ### Connectors
-- **Shopify live connector** — analyze orders, products, and customers without CSV export ([#1](https://github.com/embeddedlayers/mcp-analytics/issues/1))
-- **Stripe live connector** — subscription analytics, MRR, churn directly from Stripe ([#2](https://github.com/embeddedlayers/mcp-analytics/issues/2))
+- **Shopify live connector**, analyze orders, products, and customers without CSV export ([#1](https://github.com/embeddedlayers/mcp-analytics/issues/1))
+- **Stripe live connector**, subscription analytics, MRR, churn directly from Stripe ([#2](https://github.com/embeddedlayers/mcp-analytics/issues/2))
 
 ### Analysis Modules
-- **Bayesian A/B testing** — posterior distributions, credible intervals, expected loss
-- **Text/NLP analysis** — sentiment analysis, topic modeling, keyword extraction from text columns
-- **Causal inference** — difference-in-differences, synthetic control, regression discontinuity
+- **Bayesian A/B testing**, posterior distributions, credible intervals, expected loss
+- **Text/NLP analysis**, sentiment analysis, topic modeling, keyword extraction from text columns
+- **Causal inference**, difference-in-differences, synthetic control, regression discontinuity
 
 ### Platform
-- **Scheduled reports** — run an analysis on a recurring schedule and get notified
-- **Team workspaces** — share datasets and reports within an organization
+- **Scheduled reports**, run an analysis on a recurring schedule and get notified
+- **Team workspaces**, share datasets and reports within an organization
 
 ---
 
 ## Next (Planned)
 
-Designed but not yet in active development. Timing depends on demand — [open an issue](https://github.com/embeddedlayers/mcp-analytics/issues/new/choose) to let us know what you need.
+Designed but not yet in active development. Timing depends on demand, [open an issue](https://github.com/embeddedlayers/mcp-analytics/issues/new/choose) to let us know what you need.
 
 ### Connectors
-- **HubSpot** — CRM contacts, deals, marketing events
-- **Salesforce** — opportunities, pipeline analytics
-- **QuickBooks** — financial data, P&L analysis
-- **PostgreSQL / MySQL** — direct database connections for internal data
+- **HubSpot**, CRM contacts, deals, marketing events
+- **Salesforce**, opportunities, pipeline analytics
+- **QuickBooks**, financial data, P&L analysis
+- **PostgreSQL / MySQL**, direct database connections for internal data
 
 ### Analysis Modules
-- **Forecasting ensemble** — combine ARIMA, Prophet, and exponential smoothing with automatic model selection
-- **Customer journey mapping** — sequence analysis across touchpoints
-- **Geospatial analysis** — regional patterns, heatmaps, distance-based clustering
-- **Survey analysis suite** — Likert scales, factor analysis, structural equation modeling
+- **Forecasting ensemble**, combine ARIMA, Prophet, and exponential smoothing with automatic model selection
+- **Customer journey mapping**, sequence analysis across touchpoints
+- **Geospatial analysis**, regional patterns, heatmaps, distance-based clustering
+- **Survey analysis suite**, Likert scales, factor analysis, structural equation modeling
 
 ### Platform
-- **API webhooks** — get notified when analyses complete
-- **Custom report branding** — add your logo and colors to reports
-- **Comparison reports** — run the same analysis on two time periods and highlight changes
-- **Dataset versioning** — track changes to your data over time
+- **API webhooks**, get notified when analyses complete
+- **Custom report branding**, add your logo and colors to reports
+- **Comparison reports**, run the same analysis on two time periods and highlight changes
+- **Dataset versioning**, track changes to your data over time
 
 ---
 
@@ -61,12 +61,12 @@ Designed but not yet in active development. Timing depends on demand — [open a
 
 Things we're thinking about. No timeline yet.
 
-- **Real-time streaming connectors** — analyze data as it arrives (Kafka, webhooks)
-- **Embedded reports** — iframe reports into your own dashboards
-- **White-label API** — run MCP Analytics under your own brand
-- **R/Python notebook export** — download the code behind any analysis
-- **Multi-language reports** — generate insights in languages other than English
-- **On-premise deployment** — self-hosted option for regulated industries
+- **Real-time streaming connectors**, analyze data as it arrives (Kafka, webhooks)
+- **Embedded reports**, iframe reports into your own dashboards
+- **White-label API**, run MCP Analytics under your own brand
+- **R/Python notebook export**, download the code behind any analysis
+- **Multi-language reports**, generate insights in languages other than English
+- **On-premise deployment**, self-hosted option for regulated industries
 
 ---
 
@@ -74,7 +74,7 @@ Things we're thinking about. No timeline yet.
 
 | Feature | Version | Date |
 |---------|---------|------|
-| Four depth tiers — Snapshot / JSON / Brief / Deck | v2 | Jul 2026 |
+| Three rungs: Answer, Analytics, Custom Analytics, picked by `path_resolver` | v2 | Oct 2026 |
 | Commissioned analysis pipeline (`path_bespoke` / `build_status`) | v2 | Jun 2026 |
 | PDF export with methodology and citations ([#4](https://github.com/embeddedlayers/mcp-analytics/issues/4)) | v2 | Jun 2026 |
 | GA4 connector | 1.0.3 | Mar 2026 |
@@ -88,8 +88,8 @@ Things we're thinking about. No timeline yet.
 
 ## How We Prioritize
 
-1. **User demand** — issues and module requests with the most upvotes ship first
-2. **Build feasibility** — our module build pipeline can ship new analysis types in days, so module requests often move fast
-3. **Strategic value** — connectors and platform features that unlock new use cases
+1. **User demand**, issues and module requests with the most upvotes ship first
+2. **Build feasibility**, our module build pipeline can ship new analysis types in days, so module requests often move fast
+3. **Strategic value**, connectors and platform features that unlock new use cases
 
 The fastest way to get something built: [open a module request](https://github.com/embeddedlayers/mcp-analytics/issues/new?template=module_request.yml) with a clear description of your data and the question you're trying to answer.

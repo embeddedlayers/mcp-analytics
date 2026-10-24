@@ -12,22 +12,22 @@
 
 ## What We Do
 
-MCP Analytics brings professional data science directly into AI assistants like Claude, Cursor, and VS Code. Upload a CSV or connect live data — ask a question in plain English — get an interactive report with charts and AI-written insights.
+MCP Analytics brings professional data science directly into AI assistants like Claude, Cursor, and VS Code. Upload a CSV or connect live data, ask a question in plain English, get an interactive report with charts and AI-written insights.
 
-- **Custom Analysis Creation** — regression, clustering, time series, hypothesis testing, customer analytics, ML — built to your data and question
-- **Live Connectors** — Google Analytics 4, Google Search Console, with more planned
-- **Natural Language Interface** — describe your question, we pick the right statistical method
-- **Interactive Reports** — shareable HTML reports with visualizations and plain-English interpretation
-- **Zero Setup** — cloud-based processing, works in 30 seconds
+- **Custom Analysis Creation**, regression, clustering, time series, hypothesis testing, customer analytics, ML, built to your data and question
+- **Live Connectors**, Google Analytics 4, Google Search Console, with more planned
+- **Natural Language Interface**, describe your question, we pick the right statistical method
+- **Interactive Reports**, shareable HTML reports with visualizations and plain-English interpretation
+- **Zero Setup**, cloud-based processing, works in 30 seconds
 
 ## Key Products
 
 ### MCP Analytics Server
 Our MCP server provides the full analytics suite through a single connection:
-- **[mcp-analytics](https://github.com/embeddedlayers/mcp-analytics)** — MCP server repo, issue tracker, and roadmap
-- **[Documentation](https://mcpanalytics.ai/docs)** — setup guides and API reference
-- **[Tool Catalog](https://mcpanalytics.ai/tools)** — browse all available analysis methods
-- **[Sample Reports](https://mcpanalytics.ai/sample-reports.html)** — see real output before you sign up
+- **[mcp-analytics](https://github.com/embeddedlayers/mcp-analytics)**, MCP server repo, issue tracker, and roadmap
+- **[Documentation](https://mcpanalytics.ai/docs)**, setup guides and API reference
+- **[Tool Catalog](https://mcpanalytics.ai/tools)**, browse all available analysis methods
+- **[Sample Reports](https://mcpanalytics.ai/sample-reports.html)**, see real output before you sign up
 
 ## Quick Start
 
@@ -49,9 +49,9 @@ Sign up free at [account.mcpanalytics.ai](https://account.mcpanalytics.ai). 9,00
 
 ## Community
 
-- **[GitHub Issues](https://github.com/embeddedlayers/mcp-analytics/issues)** — bug reports, feature requests, module requests
-- **[GitHub Discussions](https://github.com/embeddedlayers/mcp-analytics/discussions)** — questions, show & tell, community help
-- **[Email Support](mailto:support@mcpanalytics.ai)** — account and billing issues
+- **[GitHub Issues](https://github.com/embeddedlayers/mcp-analytics/issues)**, bug reports, feature requests, module requests
+- **[GitHub Discussions](https://github.com/embeddedlayers/mcp-analytics/discussions)**, questions, show & tell, community help
+- **[Email Support](mailto:support@mcpanalytics.ai)**, account and billing issues
 
 ## Contact
 

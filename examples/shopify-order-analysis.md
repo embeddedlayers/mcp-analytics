@@ -2,7 +2,7 @@
 
 **Module:** [`commerce__shopify__orders__aov_analysis`](https://mcpanalytics.ai/free/commerce__shopify__orders__aov_analysis)
 
-Export your Shopify orders as CSV, upload it, and get average order value trends, customer segments, product performance, and revenue drivers — all in one report.
+Export your Shopify orders as CSV, upload it, and get average order value trends, customer segments, product performance, and revenue drivers, all in one report.
 
 ## The Conversation
 
@@ -49,7 +49,7 @@ Export from Shopify Admin → Orders → Export. The module works with the stand
 Export your Shopify orders and ask:
 
 ```
-"Analyze my Shopify orders — break down AOV by customer type, day of week,
+"Analyze my Shopify orders, break down AOV by customer type, day of week,
 and discount usage. Show me what drives higher-value orders."
 ```
 

@@ -5,13 +5,13 @@
     "email": "support@mcpanalytics.ai"
   },
   "metadata": {
-    "description": "Data analytics tools for Claude — statistical analysis, machine learning, forecasting, and more. Upload your data, ask a question, get an interactive report.",
+    "description": "Data analytics tools for Claude, statistical analysis, machine learning, forecasting, and more. Upload your data, ask a question, get an interactive report.",
     "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "mcp-analytics",
-      "description": "Upload a CSV, ask a question, and a team of specialist agents builds a custom analysis you own — regression, clustering, forecasting, A/B tests, churn prediction — delivered as an interactive HTML report with charts and AI insights.",
+      "description": "Upload a CSV, ask a question, and a team of specialist agents builds a custom analysis you own, regression, clustering, forecasting, A/B tests, churn prediction, delivered as an interactive HTML report with charts and AI insights.",
       "version": "1.0.0",
       "author": {
         "name": "MCP Analytics",

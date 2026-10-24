@@ -1,6 +1,6 @@
-# Data Connectors — MCP Analytics
+# Data Connectors: MCP Analytics
 
-MCP Analytics can pull data directly from connected sources — no CSV export required. Use `connectors_list` to see what's available in your account and `connectors_query` to pull data into an analysis.
+MCP Analytics can pull data directly from connected sources, no CSV export required. Use `connectors_list` to see what's available in your account and `connectors_query` to pull data into an analysis.
 
 ## Live Connectors
 
