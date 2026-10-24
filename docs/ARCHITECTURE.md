@@ -33,7 +33,7 @@ FastAPI application handling the MCP protocol, REST endpoints, OAuth authenticat
 
 ### Tool Registry
 
-Every analysis module is registered in PostgreSQL with its schema, column requirements, and precheck rules. The registry drives discovery, when you describe what you want to analyze, the discovery system searches the registry to find matching tools.
+Every analysis module is registered in PostgreSQL with its schema, column requirements, and precheck rules. The registry drives discovery: when you describe what you want to analyze, the discovery system searches the registry to find matching tools.
 
 ### Semantic Tool Discovery
 
@@ -56,7 +56,7 @@ Analysis output is rendered into interactive HTML reports, charts, statistical s
 
 ### Data Connectors
 
-Live connectors for Google Analytics 4 and Google Search Console pull data directly via their APIs (more planned). CSV and JSON uploads are also supported. Connector credentials are encrypted with AES-256-GCM using per-connector keys stored in Azure Key Vault.
+Live connectors for Google Analytics 4 and Google Search Console pull data directly via their APIs (more planned). CSV and JSON uploads are also supported.
 
 ## Authentication
 
@@ -65,7 +65,6 @@ Two options: an **API key** (from your [account settings](https://account.mcpana
 ## Data Privacy
 
 - Data uploaded for analysis is processed ephemerally, not retained after the job completes
-- Connector credentials are encrypted at rest with keys you can revoke at any time
 - Reports are stored and accessible via your account; you control sharing
 - TLS 1.3 for all data in transit
 

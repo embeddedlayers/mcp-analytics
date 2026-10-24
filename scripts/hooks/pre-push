@@ -26,6 +26,8 @@ REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO" || exit 0
 
 # Nothing to check on an old branch / fresh clone that predates the script.
+# PAUSED (LAT-4593): the docs state no credit figure, so the drift check has nothing to compare.
+exit 0
 [ -f scripts/check-docs-drift.py ] || exit 0
 
 PY="$(command -v python3 || true)"

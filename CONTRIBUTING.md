@@ -1,6 +1,6 @@
 # Contributing to MCP Analytics
 
-This is the **public-facing repository** for MCP Analytics, it contains documentation, examples, and listing assets. The API server code is maintained in a private repository.
+This is the **public-facing repository** for MCP Analytics. It contains documentation, examples, and listing assets. The API server code is maintained in a private repository.
 
 Contributions welcome in the following areas:
 
@@ -23,7 +23,7 @@ Open a [feature request](https://github.com/embeddedlayers/mcp-analytics/issues/
 
 ## Requesting a New Analysis Module
 
-MCP Analytics has a module build pipeline that produces new analysis modules from a specification, usually within a day. If you have a specific analytical need, describe it in a feature request with:
+MCP Analytics has a module build pipeline that produces new analysis modules from a specification. If you have a specific analytical need, describe it in a feature request with:
 - The question you're trying to answer
 - What data you have (column names and types)
 - What output you'd expect

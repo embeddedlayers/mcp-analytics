@@ -31,8 +31,6 @@ MCP Analytics is a hosted service, all users automatically run the latest versio
 
 ### Data Protection
 - TLS 1.3 for all data in transit
-- AES-256-GCM encryption for connector credentials at rest
-- Encryption keys stored in Azure Key Vault
 - Ephemeral analysis: data is not retained after a job completes
 
 ### Infrastructure
@@ -48,7 +46,7 @@ MCP Analytics is a hosted service, all users automatically run the latest versio
 
 ## Best Practices for Users
 
-**Credentials**: Never paste raw API tokens or passwords into your AI chat. Use the connector setup flow in your account, credentials are encrypted before storage.
+**Credentials**: Never paste raw API tokens or passwords into your AI chat. Use the connector setup flow in your account.
 
 **Data**: Anonymize PII before uploading datasets when possible. Uploaded data is processed ephemerally and not retained, but minimizing sensitive data in transit is good practice.
 

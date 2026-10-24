@@ -1,70 +1,27 @@
-# MCP Analytics
+# EmbeddedLayers
 
-<div align="center">
+*A DBA of PeopleDrivenAI LLC*
 
-### Statistical Analysis & Machine Learning for AI Assistants
+**A statistical analyst in your AI chat.** Bring a dataset and a question, get back a citable, re-runnable analysis with its method named.
 
-[![Website](https://img.shields.io/badge/Website-mcpanalytics.ai-blue?style=for-the-badge)](https://mcpanalytics.ai)
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Listed-green?style=for-the-badge)](https://github.com/modelcontextprotocol/registry)
-[![Docs](https://img.shields.io/badge/Docs-Available-orange?style=for-the-badge)](https://mcpanalytics.ai/docs)
+[![MCP Analytics](https://img.shields.io/badge/MCP-Analytics-blue)](https://mcpanalytics.ai)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/embeddedlayers/mcp-analytics/blob/main/LICENSE)
 
-</div>
+## What we build
 
-## What We Do
+MCP Analytics is a Model Context Protocol server that answers business and statistical questions about your data, as deep as each question needs:
 
-MCP Analytics brings professional data science directly into AI assistants like Claude, Cursor, and VS Code. Upload a CSV or connect live data, ask a question in plain English, get an interactive report with charts and AI-written insights.
+- **Answer:** a quick question about the data, read from all of it, shown with how we got it, and saved.
+- **Analytics:** a tested statistical method runs on the data, and we interpret it with charts and a written report.
+- **Custom Analytics:** a question only your business asks, built for your data from proven models, yours to re-run on next month's file.
 
-- **Custom Analysis Creation**, regression, clustering, time series, hypothesis testing, customer analytics, ML, built to your data and question
-- **Live Connectors**, Google Analytics 4, Google Search Console, with more planned
-- **Natural Language Interface**, describe your question, we pick the right statistical method
-- **Interactive Reports**, shareable HTML reports with visualizations and plain-English interpretation
-- **Zero Setup**, cloud-based processing, works in 30 seconds
+Analytics is repeatable: same data, same numbers. Every report names its method and the code that ran it.
 
-## Key Products
+## Repositories
 
-### MCP Analytics Server
-Our MCP server provides the full analytics suite through a single connection:
-- **[mcp-analytics](https://github.com/embeddedlayers/mcp-analytics)**, MCP server repo, issue tracker, and roadmap
-- **[Documentation](https://mcpanalytics.ai/docs)**, setup guides and API reference
-- **[Tool Catalog](https://mcpanalytics.ai/tools)**, browse all available analysis methods
-- **[Sample Reports](https://mcpanalytics.ai/sample-reports.html)**, see real output before you sign up
+- [mcp-analytics](https://github.com/embeddedlayers/mcp-analytics): the MCP server listing. Connect from Claude, Cursor, Windsurf or any MCP client.
+- Study replications: open replications of published studies, our code MIT, the data under each study's own open licence.
 
-## Quick Start
+Free to start; see [pricing](https://mcpanalytics.ai/pricing).
 
-```json
-{
-  "mcpServers": {
-    "mcpanalytics": {
-      "command": "npx",
-      "args": ["-y", "@mcp-analytics/mcp-analytics"],
-      "env": {
-        "MCP_ANALYTICS_API_KEY": "mcp_your_key_here"
-      }
-    }
-  }
-}
-```
-
-Sign up free at [account.mcpanalytics.ai](https://account.mcpanalytics.ai). 9,000 welcome credits, no credit card required.
-
-## Community
-
-- **[GitHub Issues](https://github.com/embeddedlayers/mcp-analytics/issues)**, bug reports, feature requests, module requests
-- **[GitHub Discussions](https://github.com/embeddedlayers/mcp-analytics/discussions)**, questions, show & tell, community help
-- **[Email Support](mailto:support@mcpanalytics.ai)**, account and billing issues
-
-## Contact
-
-- **Website**: [mcpanalytics.ai](https://mcpanalytics.ai)
-- **Email**: support@mcpanalytics.ai
-- **Security**: security@mcpanalytics.ai
-
----
-
-<div align="center">
-
-**Ask a question. Upload your data. Get an interactive report.**
-
-[Get Started](https://account.mcpanalytics.ai) · [Sample Reports](https://mcpanalytics.ai/sample-reports.html) · [Documentation](https://mcpanalytics.ai/docs)
-
-</div>
+Website: [mcpanalytics.ai](https://mcpanalytics.ai) · Free tools to try in the browser: [mcpanalytics.ai/free](https://mcpanalytics.ai/free/) · Account: [account.mcpanalytics.ai](https://account.mcpanalytics.ai)

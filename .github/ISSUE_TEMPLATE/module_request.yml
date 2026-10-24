@@ -1,12 +1,12 @@
 name: Module Request
-description: Request a new analysis module, we can often build and deploy it within days
+description: Request a new analysis module
 title: "[Module]: "
 labels: ["module-request", "enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        MCP Analytics has a module build pipeline that produces analysis modules from a specification. Well-described requests often get built and deployed within days.
+        MCP Analytics has a module build pipeline that produces analysis modules from a specification.
 
         The more specific you are about your data and the question you're trying to answer, the faster we can build it.
   - type: textarea
@@ -21,7 +21,7 @@ body:
     id: data
     attributes:
       label: What does your data look like?
-      description: Describe your dataset, column names, data types, approximate row count. A sample row helps a lot.
+      description: Describe your dataset: column names, data types, approximate row count. A sample row helps a lot.
       placeholder: |
         Columns: customer_id, signup_date, last_login, plan_type, monthly_spend, support_tickets, churned (yes/no)
         ~5,000 rows, CSV export from our billing system

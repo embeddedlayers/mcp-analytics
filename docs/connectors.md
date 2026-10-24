@@ -63,7 +63,7 @@ When using a connector, the URI format is:
 connector://connection_name/stream?param=value
 ```
 
-The connection name corresponds to a verified connection in your account. Parameters vary by connector type and are documented when you run `connectors_list`.
+The connection name corresponds to a connected account in your account settings. Parameters vary by connector type and are documented when you run `connectors_list`.
 
 ---
 

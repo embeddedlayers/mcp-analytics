@@ -11,15 +11,11 @@ name: Docs drift check
 # unauthenticated endpoint (GET /api/v1/pipeline/tiers) precisely so this check
 # can run from a public repo without DB access.
 
+# PAUSED (LAT-4593, 2026-10-24): the public docs no longer state a signup credit
+# figure, so there is nothing to compare and the check would fail on "no figure
+# found". Manual runs only. Re-enable the push and schedule triggers if a figure
+# is ever published in this repo again.
 on:
-  push:
-    branches: [main]
-  pull_request:
-  schedule:
-    # 12:20 UTC daily. The docs can go stale without anyone touching this repo —
-    # a reprice or a grant change happens elsewhere — so a push-only trigger
-    # would be blind to the exact failure mode that caused LAT-1876.
-    - cron: "20 12 * * *"
   workflow_dispatch:
 
 permissions:
