@@ -42,7 +42,7 @@ connector://mcpanalytics_gsc/stream?site_url=sc-domain:yourdomain.com&dimensions
 
 ## CSV / File Upload
 
-Any data source can be analyzed via CSV upload. Use `datasets_upload` to upload a file, then reference it in `create_analysis` or `run_analysis`.
+Any data source can be analyzed via CSV upload. Use `datasets_upload` to upload a file, then pass it to `path_resolver` as the dataset.
 
 **Supported file types:** CSV, JSON
 

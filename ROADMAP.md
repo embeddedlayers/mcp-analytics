@@ -75,7 +75,7 @@ Things we're thinking about. No timeline yet.
 | Feature | Version | Date |
 |---------|---------|------|
 | Four depth tiers — Snapshot / JSON / Brief / Deck | v2 | Jul 2026 |
-| Commissioned analysis pipeline (`create_analysis` / `build_status`) | v2 | Jun 2026 |
+| Commissioned analysis pipeline (`path_bespoke` / `build_status`) | v2 | Jun 2026 |
 | PDF export with methodology and citations ([#4](https://github.com/embeddedlayers/mcp-analytics/issues/4)) | v2 | Jun 2026 |
 | GA4 connector | 1.0.3 | Mar 2026 |
 | Google Search Console connector | 1.0.3 | Mar 2026 |

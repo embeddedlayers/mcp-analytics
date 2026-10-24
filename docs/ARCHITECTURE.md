@@ -4,7 +4,7 @@ This document describes how MCP Analytics works at a high level. It is written f
 
 ## How It Works
 
-MCP Analytics is a hosted MCP server. You connect your AI client (Claude Desktop, Cursor, or any MCP-compatible tool) to our server URL. When you ask a question, your AI assistant uploads your data and commissions an analysis at the depth you choose (`create_analysis`) — a build pipeline of specialist agents scopes the method, writes the R, runs it, and independently verifies the result before you see it. Analyses you already own (and pre-built cornerstone modules discovered via `discover_tools`) re-run directly on fresh data — all through the MCP protocol.
+MCP Analytics is a hosted MCP server. You connect your AI client (Claude Desktop, Cursor, or any MCP-compatible tool) to our server URL. When you ask a question, your AI assistant uploads your data and asks the question through `path_resolver`, which picks the rung that fits: an answer, a tested library method (`path_tool_run`), or a custom build (`path_estimate`, then `path_bespoke`). A build pipeline of specialist agents scopes the method, writes the R, runs it, and checks the result before you see it. Analyses you already own (and library tools found with `discover_tools`) run again directly on fresh data with `path_rerun`, all through the MCP protocol.
 
 ```
 Your AI Client (Claude / Cursor)
