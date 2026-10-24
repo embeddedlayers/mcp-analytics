@@ -32,7 +32,6 @@ MCP Analytics is a hosted service, all users automatically run the latest versio
 ### Data Protection
 - TLS 1.3 for all data in transit
 - Your data travels to us over HTTPS (TLS), and plain HTTP requests are redirected to HTTPS. Our database runs on encrypted storage managed by Azure. Each dataset's contents are also stored encrypted under their own key. Today our service also holds that key so it can run your analysis, which means this layer protects the stored copy but does not protect against someone who has access to our database.
-- Ephemeral analysis: data is not retained after a job completes
 
 ### Infrastructure
 - DDoS protection and WAF via Cloudflare
@@ -49,7 +48,7 @@ MCP Analytics is a hosted service, all users automatically run the latest versio
 
 **Credentials**: Never paste raw API tokens or passwords into your AI chat. Use the connector setup flow in your account.
 
-**Data**: Anonymize PII before uploading datasets when possible. Uploaded data is processed ephemerally and not retained, but minimizing sensitive data in transit is good practice.
+**Data**: Anonymize PII before uploading datasets when possible. Minimizing sensitive data in transit is good practice.
 
 **Reports**: Shared report URLs are accessible to anyone with the link. Only share reports that contain data you're comfortable sharing.
 
