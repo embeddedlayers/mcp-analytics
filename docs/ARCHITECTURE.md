@@ -79,7 +79,6 @@ Two options: an **API key** (from your [account settings](https://account.mcpana
 | Analysis runtime | R (statistical modules) |
 | Container runtime | Docker |
 | CDN / DDoS | Cloudflare |
-| Secrets | Azure Key Vault |
 | Hosting | Azure |
 
 ---

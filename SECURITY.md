@@ -10,7 +10,7 @@ Email **support@mcpanalytics.ai** with subject line `[SECURITY]`. Include:
 - Potential impact
 - Any suggested fix (optional)
 
-MCP Analytics processes financial data (Shopify orders, Stripe payments). We treat security reports seriously.
+MCP Analytics processes the business data you upload or connect. We treat security reports seriously.
 
 ## Supported Versions
 
@@ -28,11 +28,9 @@ MCP Analytics is a hosted service, all users automatically run the latest versio
 
 ### Infrastructure
 - DDoS protection and WAF via Cloudflare
-- Secrets managed via Azure Key Vault
 
 ### Privacy
 - Datasets you upload are stored, encrypted as described above, so you can reuse them.
-- Connector credentials deletable at any time from your account
 - Reports are private by default; sharing is opt-in
 
 ## Best Practices for Users
@@ -44,12 +42,3 @@ MCP Analytics is a hosted service, all users automatically run the latest versio
 **Reports**: Shared report URLs are accessible to anyone with the link. Only share reports that contain data you're comfortable sharing.
 
 **OAuth**: Review the permission scopes when authenticating. If you suspect your account is compromised, contact support@mcpanalytics.ai to revoke access.
-
-## Compliance
-
-- GDPR: Data deletion available upon request
-- SOC 2: In progress
-
----
-
-Last updated: March 2026
