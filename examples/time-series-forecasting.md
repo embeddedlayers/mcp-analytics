@@ -6,6 +6,8 @@ Upload any time series data, revenue, traffic, inventory, sensor readings, and g
 
 ## The Conversation
 
+This is an illustration: the figures below are made up to show the shape of an answer, not a real result.
+
 ```
 You: "I have 2 years of daily sales data. Can you forecast the next 90 days
      and show me the seasonal patterns?"
