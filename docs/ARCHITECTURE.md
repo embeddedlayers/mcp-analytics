@@ -48,7 +48,7 @@ Embeddings are stored in PostgreSQL via pgvector. The five signals are combined 
 
 ### Analysis Execution
 
-Each analysis runs in an isolated Docker container with the R statistical environment. Containers are ephemeral, they start for your job and terminate when it finishes.
+Each analysis runs in the R statistical environment.
 
 ### Report Generation
 
@@ -64,8 +64,8 @@ Two options: an **API key** (from your [account settings](https://account.mcpana
 
 ## Data Privacy
 
+- Datasets you upload are stored, encrypted as described above, so you can reuse them.
 - Reports are stored and accessible via your account; you control sharing
-- TLS 1.3 for all data in transit
 - Your data travels to us over HTTPS (TLS), and plain HTTP requests are redirected to HTTPS. Our database runs on encrypted storage managed by Azure. Each dataset's contents are also stored encrypted under their own key. Today our service also holds that key so it can run your analysis, which means this layer protects the stored copy but does not protect against someone who has access to our database.
 
 ## Technology

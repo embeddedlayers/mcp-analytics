@@ -10,12 +10,7 @@ Email **support@mcpanalytics.ai** with subject line `[SECURITY]`. Include:
 - Potential impact
 - Any suggested fix (optional)
 
-**Response timeline:**
-- Acknowledgement within 48 hours
-- Status update within 7 days
-- Fix deployed within 30 days for confirmed vulnerabilities
-
-MCP Analytics processes financial data (Shopify orders, Stripe payments). We treat security reports seriously and respond promptly.
+MCP Analytics processes financial data (Shopify orders, Stripe payments). We treat security reports seriously.
 
 ## Supported Versions
 
@@ -24,23 +19,19 @@ MCP Analytics is a hosted service, all users automatically run the latest versio
 ## Security Measures
 
 ### Authentication
-- OAuth 2.0 with PKCE via Auth0
-- No API keys, authentication is entirely OAuth-based
+- Connect with an API key in the X-API-Key header (from your account settings) or with OAuth 2.0 via Auth0
 - Scoped permissions: `execute:tools`, `openid`, `profile`, `email`
 - Token refresh handled automatically by the MCP client
 
 ### Data Protection
-- TLS 1.3 for all data in transit
 - Your data travels to us over HTTPS (TLS), and plain HTTP requests are redirected to HTTPS. Our database runs on encrypted storage managed by Azure. Each dataset's contents are also stored encrypted under their own key. Today our service also holds that key so it can run your analysis, which means this layer protects the stored copy but does not protect against someone who has access to our database.
 
 ### Infrastructure
 - DDoS protection and WAF via Cloudflare
-- Isolated Docker containers per analysis job
-- Azure managed database with automated backups
-- Secrets managed via Azure Key Vault (not hardcoded anywhere)
+- Secrets managed via Azure Key Vault
 
 ### Privacy
-- No data retention after analysis completes
+- Datasets you upload are stored, encrypted as described above, so you can reuse them.
 - Connector credentials deletable at any time from your account
 - Reports are private by default; sharing is opt-in
 
@@ -58,7 +49,6 @@ MCP Analytics is a hosted service, all users automatically run the latest versio
 
 - GDPR: Data deletion available upon request
 - SOC 2: In progress
-- No data retention by default
 
 ---
 
