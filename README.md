@@ -18,7 +18,7 @@ Website: [mcpanalytics.ai](https://mcpanalytics.ai) · Free tools you can try in
 
 **Endpoint:** `https://api.mcpanalytics.ai/mcp/api-key` (Streamable HTTP, JSON-RPC)
 
-**Authentication:** an API key in the `X-API-Key` header, or OAuth 2.0 via Auth0 from your AI client. Create an account at [mcpanalytics.ai](https://mcpanalytics.ai) and copy your key from your account settings.
+**Authentication:** an API key in the `X-API-Key` header. Create an account at [mcpanalytics.ai](https://mcpanalytics.ai) and copy your key from your account settings.
 
 ```json
 {
